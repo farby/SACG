@@ -44,8 +44,8 @@ create table Animales (
 	RFID bigint,
 	DICOSE bigint references Establecimientos,
 	Sexo char(1) check (Sexo in ('M', 'H')),
-	AñoNacimiento int,
-	AñoMuerte int,
+	AnoNacimiento int,
+	AnoMuerte int,
 	EstacionNacimiento char(1) check (EstacionNacimiento in ('V', 'O', 'P', 'I')),
 	RazaCruza varchar(25),
 	Historia int references Historias
