@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4CB04588-B95D-4AB5-A750-23AD066E97E9}</ProjectGuid>
+    <ProjectGuid>{DE6E19A0-502C-4E5F-B888-A4ADCA99FF09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SACG_DAL</RootNamespace>
-    <AssemblyName>SACG_DAL</AssemblyName>
+    <RootNamespace>SACG_BLL</RootNamespace>
+    <AssemblyName>SACG_BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,9 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractBase.cs" />
-    <Compile Include="FabricaObjetosConectados.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Establecimiento.cs" />
+    <Compile Include="Evento.cs" />
+    <Compile Include="IDomainObject.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transferencia.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

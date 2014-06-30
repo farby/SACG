@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos atributos para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("SACG_DAL")]
+[assembly: AssemblyTitle("SACG_Repos")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SACG_DAL")]
+[assembly: AssemblyProduct("SACG_Repos")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como identificador de typelib si este proyecto se expone a COM
-[assembly: Guid("aa830de8-bd61-4563-8610-cc3042fa5caf")]
+[assembly: Guid("cf136fe6-32d8-4752-a01f-26defdd179d7")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D887C19F-D002-4FB8-8996-DBF62B38D89E}</ProjectGuid>
+    <ProjectGuid>{21DEB74C-9910-4687-8574-FA0D40FBDE50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SACG_Mappers</RootNamespace>
@@ -41,6 +41,16 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SACG_BLL\SACG_BLL.csproj">
+      <Project>{de6e19a0-502c-4e5f-b888-a4adca99ff09}</Project>
+      <Name>SACG_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SACG_DAL\SACG_DAL.csproj">
+      <Project>{4cb04588-b95d-4ab5-a750-23ad066e97e9}</Project>
+      <Name>SACG_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
