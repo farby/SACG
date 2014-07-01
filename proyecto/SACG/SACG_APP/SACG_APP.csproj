@@ -57,15 +57,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Establecimiento.aspx" />
+    <Content Include="WebEstablecimiento.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Establecimiento.aspx.cs">
-      <DependentUpon>Establecimiento.aspx</DependentUpon>
+    <Compile Include="WebEstablecimiento.aspx.cs">
+      <DependentUpon>WebEstablecimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Establecimiento.aspx.designer.cs">
-      <DependentUpon>Establecimiento.aspx</DependentUpon>
+    <Compile Include="WebEstablecimiento.aspx.designer.cs">
+      <DependentUpon>WebEstablecimiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +77,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SACG_BLL\SACG_BLL.csproj">
+      <Project>{de6e19a0-502c-4e5f-b888-a4adca99ff09}</Project>
+      <Name>SACG_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SACG_Repos\SACG_Repos.csproj">
+      <Project>{84752baa-cd68-4baf-9f6e-e5929df9b873}</Project>
+      <Name>SACG_Repos</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

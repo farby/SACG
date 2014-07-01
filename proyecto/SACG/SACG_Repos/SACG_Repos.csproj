@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="RepoEstablecimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SACG_BLL\SACG_BLL.csproj">
+      <Project>{de6e19a0-502c-4e5f-b888-a4adca99ff09}</Project>
+      <Name>SACG_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SACG_Mappers\SACG_Mappers.csproj">
+      <Project>{21deb74c-9910-4687-8574-fa0d40fbde50}</Project>
+      <Name>SACG_Mappers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

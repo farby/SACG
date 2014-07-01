@@ -62,6 +62,7 @@ namespace SACG_DAL
                     "Error al cerrar la conexion:" + e.Message);
             }
         }
+
         #region Manejo de transacciones
 
         //Variables utilizadas para compartir la conexión y la transacción entre distintos métodos

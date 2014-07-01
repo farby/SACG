@@ -39,7 +39,6 @@ namespace SACG_Mappers
             IDataParameter pTelefono = this.CrearParametro("@Telefono", establecimiento.Telefono);
             IDataParameter pEmail = this.CrearParametro("@Email", establecimiento.Email);
             IDataParameter pSuperficie = this.CrearParametro("@Superficie", establecimiento.Superficie);
-            IDataParameter pEstado = this.CrearParametro("@Estado", "Pendiente");
 
             listaParametros.Add(pDICOSE);
             listaParametros.Add(pRUT);
@@ -53,17 +52,19 @@ namespace SACG_Mappers
             listaParametros.Add(pTelefono);
             listaParametros.Add(pEmail);
             listaParametros.Add(pSuperficie);
-            listaParametros.Add(pEstado);
 
-            this.EjecutarActualización(CommandType.StoredProcedure, "spInsertarEstablecimiento", listaParametros);
+            this.EjecutarActualización(CommandType.StoredProcedure, "spAltaEstablecimiento", listaParametros);
         }
 
         public void Eliminar()
         {
             List<IDataParameter> listaParametros = new List<IDataParameter>();
+
             IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
+
             listaParametros.Add(pDICOSE);
-            this.EjecutarActualización(CommandType.StoredProcedure, "spEliminarEstablecimiento", listaParametros);
+
+            this.EjecutarActualización(CommandType.StoredProcedure, "spBajaEstablecimiento", listaParametros);
         }
 
         public void Modificar()
@@ -104,26 +105,12 @@ namespace SACG_Mappers
             List<IDataParameter> listaParametros = new List<IDataParameter>();
 
             IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
-            IDataParameter pEstado = this.CrearParametro("@RUT", "Activo");
 
             listaParametros.Add(pDICOSE);
-            listaParametros.Add(pEstado);
 
-            this.EjecutarActualización(CommandType.StoredProcedure, "spCambiarEstadoEstablecimiento", listaParametros);
+            this.EjecutarActualización(CommandType.StoredProcedure, "spActivarEstablecimiento", listaParametros);
         }
 
-        public void Inactivar()
-        {
-            List<IDataParameter> listaParametros = new List<IDataParameter>();
-
-            IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
-            IDataParameter pEstado = this.CrearParametro("@RUT", "Inactivo");
-
-            listaParametros.Add(pDICOSE);
-            listaParametros.Add(pEstado);
-
-            this.EjecutarActualización(CommandType.StoredProcedure, "spCambiarEstadoEstablecimiento", listaParametros);
-        }
 
         #endregion
 

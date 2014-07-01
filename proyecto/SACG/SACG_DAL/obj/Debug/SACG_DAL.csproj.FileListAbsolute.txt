@@ -1,0 +1,5 @@
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\bin\Debug\SACG_DAL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\bin\Debug\SACG_DAL.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.pdb

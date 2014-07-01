@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Establecimiento.aspx.cs" Inherits="SACG_APP.Establecimiento" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebEstablecimiento.aspx.cs" Inherits="SACG_APP._WebEstablecimiento" %>
 
 <!DOCTYPE html>
 
@@ -118,11 +118,10 @@
                 </asp:TableRow>
                 <asp:TableFooterRow>
                     <asp:TableCell ColumnSpan="4" HorizontalAlign="Center">
-                        <asp:Button runat="server" Text="Confirmar" />
+                        <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClientClick="AltaEstablecimiento()" />
                     </asp:TableCell>
                 </asp:TableFooterRow>
             </asp:Table>
-
         </div>
     </form>
 </body>
