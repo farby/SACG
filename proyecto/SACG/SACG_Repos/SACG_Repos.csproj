@@ -47,6 +47,10 @@
       <Project>{de6e19a0-502c-4e5f-b888-a4adca99ff09}</Project>
       <Name>SACG_BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SACG_DAL\SACG_DAL.csproj">
+      <Project>{4cb04588-b95d-4ab5-a750-23ad066e97e9}</Project>
+      <Name>SACG_DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SACG_Mappers\SACG_Mappers.csproj">
       <Project>{21deb74c-9910-4687-8574-fa0d40fbde50}</Project>
       <Name>SACG_Mappers</Name>
