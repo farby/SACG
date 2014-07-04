@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SACG_DAL;
 using SACG_BLL;
 using System.Data;
+using System.Data.SqlClient;
 using System.Configuration;
 
 namespace SACG_Mappers
@@ -16,7 +17,7 @@ namespace SACG_Mappers
 
         public EstablecimientoMapper(Establecimiento e)
             : base(FabricaObjetosConectados.Proveedores.SqlServer,
-            System.Configuration.ConfigurationManager.ConnectionStrings["conexionSACG"].ConnectionString)
+            ConfigurationManager.ConnectionStrings["conexionSACG"].ConnectionString)
         {
             this.establecimiento = e;
         }
@@ -52,8 +53,48 @@ namespace SACG_Mappers
             listaParametros.Add(pTelefono);
             listaParametros.Add(pEmail);
             listaParametros.Add(pSuperficie);
+            
+            SqlConnection cn = new SqlConnection(
+                ConfigurationManager.ConnectionStrings["conexionSACG"].ConnectionString);
 
-            this.EjecutarActualización(CommandType.StoredProcedure, "spAltaEstablecimiento", listaParametros);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "spAltaEstablecimiento";
+                cmd.CommandType = CommandType.StoredProcedure;
+                
+                cmd.Connection = cn;
+
+                cmd.Parameters.AddWithValue("@DICOSE", establecimiento.DICOSE);
+                cmd.Parameters.AddWithValue("@RUT", establecimiento.RUT);
+                cmd.Parameters.AddWithValue("@BPS", establecimiento.BPS);
+                cmd.Parameters.AddWithValue("@RazonSocial", establecimiento.RazonSocial);
+                cmd.Parameters.AddWithValue("@Responsable", establecimiento.Responsable);
+                cmd.Parameters.AddWithValue("@Departamento", establecimiento.Departamento);
+                cmd.Parameters.AddWithValue("@SeccionalPolicial", establecimiento.SeccionalPolicial);
+                cmd.Parameters.AddWithValue("@Paraje", establecimiento.Paraje);
+                cmd.Parameters.AddWithValue("@Direccion", establecimiento.Direccion);
+                cmd.Parameters.AddWithValue("@Telefono", establecimiento.Telefono);
+                cmd.Parameters.AddWithValue("@Email", establecimiento.Email);
+                cmd.Parameters.AddWithValue("@Superficie", establecimiento.Superficie);
+
+                cmd.Parameters.AddWithValue("@Nombre", "Prueba");
+                cmd.Parameters.AddWithValue("@Apellido", "Prueba");
+
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+                cn.Dispose();
+            }
+            //this.EjecutarActualización(CommandType.StoredProcedure, "spAltaEstablecimiento", listaParametros);
         }
 
         public void Eliminar()

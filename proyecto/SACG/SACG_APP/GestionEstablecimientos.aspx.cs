@@ -14,15 +14,14 @@ namespace SACG_APP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            AltaEstablecimiento();
         }
 
         protected void AltaEstablecimiento()
         {
             IRepoEstablecimiento repo = new RepoEstablecimiento();
             SACG_BLL.Establecimiento e;
-            e = new Establecimiento(1,1,1,"1",1,"1",1,"1","1","1","1",1);
-            repo.Add(e);
+
             try
             {
                 e = new SACG_BLL.Establecimiento(
