@@ -57,15 +57,29 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GestionEstablecimientos.aspx" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\img\User_Avatar_1.png" />
+    <Content Include="Pages\about.aspx" />
+    <Content Include="Pages\GestionEstablecimientos.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestionEstablecimientos.aspx.cs">
+    <Compile Include="Pages\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GestionEstablecimientos.aspx.cs">
       <DependentUpon>GestionEstablecimientos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GestionEstablecimientos.aspx.designer.cs">
+    <Compile Include="Pages\GestionEstablecimientos.aspx.designer.cs">
       <DependentUpon>GestionEstablecimientos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitio.Master.cs">

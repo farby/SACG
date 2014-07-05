@@ -3,15 +3,20 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cph" runat="server">
+  
+
     <br />
-    <asp:Label ID="lblTitulo" runat="server" Text="Registrar Nuevo Establecimiento" Font-Size="XX-Large" style="text-align: center" Width="100%"></asp:Label>
+        <div class="page-header">
+            <h1>Registrar Nuevo Establecimiento</h1>
+        </div>
+    
     <asp:Table ID="tab" runat="server" Width="75%" CellSpacing="10" HorizontalAlign="Center">
         <asp:TableRow>
             <asp:TableCell>
-                <asp:Label ID="lblDicose" runat="server" Text="DICOSE"></asp:Label>
+                <asp:Label ID="lblDicose" runat="server" Text="DICOSE">12</asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:TextBox ID="txtDicose" runat="server">999</asp:TextBox>
+                <asp:TextBox ID="txtDicose" runat="server"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblDepartamento" runat="server" Text="Departamento"></asp:Label>
@@ -106,7 +111,8 @@
         </asp:TableRow>
         <asp:TableFooterRow>
             <asp:TableCell ColumnSpan="4" HorizontalAlign="Center">
-                <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClientClick="AltaEstablecimiento" />
+                <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClientClick="AltaEstablecimiento" CssClass="btn btn-primary"/>
+                
             </asp:TableCell>
         </asp:TableFooterRow>
     </asp:Table>

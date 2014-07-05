@@ -4,14 +4,65 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Obligatorio Benitez-Bordenave</title>
+    <!-- Bootstrap core CSS -->
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
 </head>
 <body>
     <form id="frm" runat="server">
-    <div>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SACG</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Establecimientos <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="GestionEstablecimientos.aspx">Registrar</a></li>
+                <li><a href="#">Modificar</a></li>
+                <li><a href="#">Activar / Desactivar</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Listado Establecimientos</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Animales <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="GestionEstablecimientos.aspx">Registrar</a></li>
+                <li><a href="#">Modificar</a></li>
+                <li><a href="#">Activar / Desactivar</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Listado Establecimientos</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Personas</a></li>
+            <li><a href="#contact">Reportes</a></li>
+            <li><a href="about.aspx">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+   
+   <!-- <div>
         <asp:Menu ID="mnu" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1em" ForeColor="#284E98" Orientation="Horizontal" StaticSubMenuIndent="10px" Width="100%" RenderingMode="List" style="text-align: left">
             <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
             <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
@@ -38,9 +89,24 @@
             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <StaticSelectedStyle BackColor="#507CD1" />
         </asp:Menu>
-        <asp:ContentPlaceHolder ID="cph" runat="server">
+        <asp:ContentPlaceHolder ID="cph2" runat="server">
         </asp:ContentPlaceHolder>
     </div>
+        -->
+
+
+    <div class="container jumbotron">
+       
+        <asp:ContentPlaceHolder ID="cph" runat="server">     
+        </asp:ContentPlaceHolder>
+    </div>
+    <hr />
+    <footer>
+        Fabricio Benitez - 111111<br />
+        Nicolas Bordenave - 103333
+    </footer>
+    <script src="/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
     </form>
 </body>
 </html>
