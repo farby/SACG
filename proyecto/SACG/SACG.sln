@@ -1,6 +1,6 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 20
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SACG_APP", "SACG_APP\SACG_APP.csproj", "{ED27F65A-0CD1-40DE-B337-C94DDE1F5D18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SACG_BLL", "SACG_BLL\SACG_BLL.csproj", "{DE6E19A0-502C-4E5F-B888-A4ADCA99FF09}"
