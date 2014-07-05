@@ -10,21 +10,27 @@ using SACG_Repos;
 
 namespace SACG_APP
 {
-    public partial class GestionEstablecimientos : System.Web.UI.Page
+    public partial class RegistrarEstablecimiento : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD:proyecto/SACG/SACG_APP/Pages/RegistrarEstablecimiento.aspx.cs
+            
+=======
            // AltaEstablecimiento();
+>>>>>>> origin/master:proyecto/SACG/SACG_APP/Pages/GestionEstablecimientos.aspx.cs
         }
 
-        protected void AltaEstablecimiento()
+        protected void AddEstablecimiento(object sender, EventArgs e)
         {
             IRepoEstablecimiento repo = new RepoEstablecimiento();
-            SACG_BLL.Establecimiento e;
+            SACG_BLL.Establecimiento est;
+            SACG_BLL.Persona per;
 
             try
             {
-                e = new SACG_BLL.Establecimiento(
+                //CREO EL ESTABLECIMIENTO
+                est = new Establecimiento(
                 Convert.ToInt64(txtDicose.Text),
                 Convert.ToInt64(txtRut.Text),
                 Convert.ToInt64(txtBps.Text),
@@ -37,11 +43,19 @@ namespace SACG_APP
                 txtTelefono.Text,
                 txtEmail.Text,
                 Convert.ToInt32(txtSuperficie.Text));
-                repo.Add(e);
+                //CREO EL RESPONSABLE
+                per = new Persona(
+                    Convert.ToInt64(txtDocumento.Text),
+                    txtNombre.Text,
+                    txtApellido.Text,
+                    txtTelefono.Text
+                );
+                //AGREGO EL ESTABLECIMIENTO Y SU RESPONSABLE
+                repo.Add(est, per);
             }
-            finally
+            catch
             {
-                txtApellido.Text = "jasdasdasd";
+                throw;
             }
         }
     }

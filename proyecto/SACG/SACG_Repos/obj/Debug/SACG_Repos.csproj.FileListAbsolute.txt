@@ -9,14 +9,5 @@ C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Deb
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Mappers.pdb
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Debug\SACG_Repos.dll
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Debug\SACG_Repos.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Repos.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Repos.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_BLL.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_DAL.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Mappers.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_BLL.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_DAL.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Mappers.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Debug\SACG_Repos.csprojResolveAssemblyReference.cache
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Debug\SACG_Repos.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Debug\SACG_Repos.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Finders.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Debug\SACG_Finders.pdb

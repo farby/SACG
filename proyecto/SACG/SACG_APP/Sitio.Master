@@ -31,9 +31,9 @@
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Establecimientos <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="GestionEstablecimientos.aspx">Registrar</a></li>
-                <li><a href="#">Modificar</a></li>
-                <li><a href="#">Activar / Desactivar</a></li>
+                <li><a href="RegistrarEstablecimiento.aspx">Registrar</a></li>
+                <li><a href="ModificarEstablecimiento.aspx">Modificar</a></li>
+                <li><a href="ActivarEstablecimiento.aspx">Activar / Desactivar</a></li>
                 <li><a href="#">Buscar</a></li>
                 <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
@@ -102,7 +102,7 @@
     </div>
     <hr />
     <footer>
-        Fabricio Benitez - 111111<br />
+        Fabricio Benitez - 182019<br />
         Nicolas Bordenave - 103333
     </footer>
     <script src="/Scripts/jquery-2.1.1.min.js"></script>

@@ -5,17 +5,19 @@ using System.Text;
 using SACG_BLL;
 using SACG_BLL.IRepos;
 using SACG_Mappers;
+using SACG_Finders;
 
 namespace SACG_Repos
 {
     public class RepoEstablecimiento : IRepoEstablecimiento
     {
-        public void Add(Establecimiento e)
+        public void Add(Establecimiento e, Persona p)
         {
             EstablecimientoMapper m;
             //VALIDAR
-            m = new EstablecimientoMapper(e);
+            m = new EstablecimientoMapper(e, p);
             m.Insertar();
+            m = null;
         }
 
         public void Rem(Establecimiento e)
@@ -26,31 +28,43 @@ namespace SACG_Repos
             m.Eliminar();
         }
 
-        public void Upd(Establecimiento e)
+        public void Upd(Establecimiento e, Persona p)
         {
             EstablecimientoMapper m;
             //VALIDAR
-            m = new EstablecimientoMapper(e);
+            m = new EstablecimientoMapper(e, p);
             m.Modificar();
         }
 
-
-        //FALTA IMPLEMENTAE FINDERS
-
-       /* public Establecimiento Fnd(Int64 DICOSE)
+        public void Act(Establecimiento e)
         {
             EstablecimientoMapper m;
-
-            AdoptameFinders.FinderAnimal f = new AdoptameFinders.FinderAnimal();
-            Animal a = f.findById(id);
-            return a;
+            m = new EstablecimientoMapper(e);
+            m.Activar();
         }
 
-        public List<Animal> FindAll()
+        public Establecimiento Fnd(Int64 DICOSE)
         {
-            AdoptameFinders.FinderAnimal f = new AdoptameFinders.FinderAnimal();
-            return f.findAll();
-        }*/
+            //CREO FINDER
+            EstablecimientoFinder f = new EstablecimientoFinder();
+            //BUSCO Y DEVUELVO EL ESTABLECIMIENTO
+            Establecimiento e = f.Buscar(DICOSE);
+            return e;
+        }
+
+        public List<Int64> Sby()
+        {
+            //CREO FINDER
+            EstablecimientoFinder f = new EstablecimientoFinder();
+            return f.Pendientes();
+        }
+
+        public List<Int64> All()
+        {
+            //CREO FINDER
+            EstablecimientoFinder f = new EstablecimientoFinder();
+            return f.Activos();
+        }
 
 
     }

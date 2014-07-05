@@ -51,6 +51,10 @@
       <Project>{4cb04588-b95d-4ab5-a750-23ad066e97e9}</Project>
       <Name>SACG_DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SACG_Finders\SACG_Finders.csproj">
+      <Project>{e957464f-11b2-4e77-b7cf-5fdf152d7055}</Project>
+      <Name>SACG_Finders</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SACG_Mappers\SACG_Mappers.csproj">
       <Project>{21deb74c-9910-4687-8574-fa0d40fbde50}</Project>
       <Name>SACG_Mappers</Name>

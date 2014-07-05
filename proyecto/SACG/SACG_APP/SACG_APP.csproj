@@ -61,6 +61,9 @@
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\img\User_Avatar_1.png" />
     <Content Include="Pages\about.aspx" />
+    <Content Include="Pages\ActivarEstablecimiento.aspx" />
+    <Content Include="Pages\ModificarEstablecimiento.aspx" />
+    <Content Include="Pages\RegistrarEstablecimiento.aspx" />
     <Content Include="Pages\GestionEstablecimientos.aspx" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -76,12 +79,26 @@
     <Compile Include="Pages\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GestionEstablecimientos.aspx.cs">
-      <DependentUpon>GestionEstablecimientos.aspx</DependentUpon>
+    <Compile Include="Pages\ActivarEstablecimiento.aspx.cs">
+      <DependentUpon>ActivarEstablecimiento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\GestionEstablecimientos.aspx.designer.cs">
-      <DependentUpon>GestionEstablecimientos.aspx</DependentUpon>
+    <Compile Include="Pages\ActivarEstablecimiento.aspx.designer.cs">
+      <DependentUpon>ActivarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ModificarEstablecimiento.aspx.cs">
+      <DependentUpon>ModificarEstablecimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ModificarEstablecimiento.aspx.designer.cs">
+      <DependentUpon>ModificarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarEstablecimiento.aspx.cs">
+      <DependentUpon>RegistrarEstablecimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RegistrarEstablecimiento.aspx.designer.cs">
+      <DependentUpon>RegistrarEstablecimiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>

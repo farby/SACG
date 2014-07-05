@@ -22,6 +22,13 @@ namespace SACG_BLL
         public Int32 Superficie { get; set; }
         public Enum Estado { get; set; }
 
+        public Establecimiento() {}
+
+        public Establecimiento(Int64 DICOSE)
+        {
+            this.DICOSE = DICOSE;
+        }
+
         public Establecimiento(Int64 DICOSE, Int64 RUT, Int64 BPS, String RazonSocial, Int64 Responsable,
             String Departamento, Int32 SeccionalPolicial, String Paraje, String Direccion, String Telefono,
             String Email, Int32 Superficie)

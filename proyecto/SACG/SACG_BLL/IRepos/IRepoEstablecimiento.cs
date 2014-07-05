@@ -8,10 +8,12 @@ namespace SACG_BLL.IRepos
 {
     public interface IRepoEstablecimiento
     {
-        void Add(Establecimiento e);
+        void Add(Establecimiento e, Persona p);
         void Rem(Establecimiento e);
-        void Upd(Establecimiento e);
-        //Establecimiento Fnd(Int64 DICOSE);
-        //List<Establecimiento> All();
+        void Upd(Establecimiento e, Persona p);
+        void Act(Establecimiento e);
+        Establecimiento Fnd(Int64 DICOSE);
+        List<Int64> Sby();
+        List<Int64> All();
     }
 }

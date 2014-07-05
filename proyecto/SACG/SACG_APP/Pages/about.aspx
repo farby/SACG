@@ -14,7 +14,7 @@
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Fabricio Benitez : XXXXXX</h3>
+              <h3 class="panel-title">Fabricio Benitez : 182019</h3>
             </div>
             <div class="panel-body">
                 <img src="/Content/img/User_Avatar_1.png"/>

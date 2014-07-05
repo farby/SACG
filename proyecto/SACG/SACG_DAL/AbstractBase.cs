@@ -23,11 +23,10 @@ namespace SACG_DAL
 
         protected IDbConnection Conectar()
         {
-            if (cn == null)
-            {
-                cn = new FabricaObjetosConectados().getConexionProveedor(this.proveedor);
-                cn.ConnectionString = cadenaConexion;
-            }
+
+            cn = new FabricaObjetosConectados().getConexionProveedor(this.proveedor);
+            cn.ConnectionString = cadenaConexion;
+
             return cn;
         }
 
@@ -36,15 +35,16 @@ namespace SACG_DAL
             try
             {
                 if (cn != null && cn.State != ConnectionState.Open)
+                {
                     cn.Open();
+                } 
             }
             catch (Exception e)
             {
-
-                System.Diagnostics.Debug.Assert(false,
-                    "Error al abrir la conexion:" + e.Message);
+                System.Diagnostics.Debug.Assert(false, "Error al abrir la conexion:" + e.Message);
             }
         }
+
         protected void Cerrar(IDbConnection cn)
         {
             try
@@ -171,7 +171,7 @@ namespace SACG_DAL
                     cmd.Parameters.Add(param);
             return cmd;
         }
-        protected int EjecutarActualización(CommandType tipo, string cadenaComando)
+        protected int EjecutarActualizacion(CommandType tipo, string cadenaComando)
         {
             int afectadas = -1;
             IDbCommand cmd = null;
@@ -200,7 +200,7 @@ namespace SACG_DAL
             }
 
         }
-        public int EjecutarActualización(CommandType tipo, string cadenaComando,
+        public int EjecutarActualizacion(CommandType tipo, string cadenaComando,
             List<IDataParameter> listaParams)
         {
             int afectadas = -1;
