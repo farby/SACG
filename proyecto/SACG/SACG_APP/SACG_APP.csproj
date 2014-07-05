@@ -63,6 +63,7 @@
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\ActivarEstablecimiento.aspx" />
     <Content Include="Pages\ModificarEstablecimiento.aspx" />
+    <Content Include="Pages\RegistrarAnimal.aspx" />
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -91,6 +92,13 @@
     </Compile>
     <Compile Include="Pages\ModificarEstablecimiento.aspx.designer.cs">
       <DependentUpon>ModificarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrarAnimal.aspx.cs">
+      <DependentUpon>RegistrarAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RegistrarAnimal.aspx.designer.cs">
+      <DependentUpon>RegistrarAnimal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegistrarEstablecimiento.aspx.cs">
       <DependentUpon>RegistrarEstablecimiento.aspx</DependentUpon>

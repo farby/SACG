@@ -2,3 +2,16 @@
 *.pdb
 proyecto/SACG/SACG.v11.suo
 *.cache
+proyecto/SACG/SACG_APP/bin/SACG_APP.dll
+proyecto/SACG/SACG_APP/bin/SACG_APP.pdb
+proyecto/SACG/SACG_APP/bin/SACG_Finders.dll
+proyecto/SACG/SACG_APP/bin/SACG_Finders.pdb
+proyecto/SACG/SACG_APP/bin/SACG_Mappers.dll
+proyecto/SACG/SACG_APP/bin/SACG_Mappers.pdb
+proyecto/SACG/SACG_APP/bin/SACG_Repos.dll
+proyecto/SACG/SACG_APP/bin/SACG_Repos.pdb
+proyecto/SACG/SACG_APP/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+proyecto/SACG/SACG_APP/obj/Debug/SACG_APP.csproj.FileListAbsolute.txt
+proyecto/SACG/SACG_APP/obj/Debug/SACG_APP.csprojResolveAssemblyReference.cache
+proyecto/SACG/SACG_APP/obj/Debug/SACG_APP.dll
+proyecto/SACG/SACG_APP/obj/Debug/SACG_APP.pdb
