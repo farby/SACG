@@ -14,7 +14,7 @@ namespace SACG_APP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AltaEstablecimiento();
+           // AltaEstablecimiento();
         }
 
         protected void AltaEstablecimiento()

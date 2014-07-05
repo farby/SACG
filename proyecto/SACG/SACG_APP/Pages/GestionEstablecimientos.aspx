@@ -13,10 +13,10 @@
     <asp:Table ID="tab" runat="server" Width="75%" CellSpacing="10" HorizontalAlign="Center">
         <asp:TableRow>
             <asp:TableCell>
-                <asp:Label ID="lblDicose" runat="server" Text="DICOSE">12</asp:Label>
+                <asp:Label ID="lblDicose" runat="server" Text="DICOSE">DICOSE</asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:TextBox ID="txtDicose" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDicose" runat="server">12</asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblDepartamento" runat="server" Text="Departamento"></asp:Label>

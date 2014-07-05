@@ -62,6 +62,7 @@
     <Content Include="Content\img\User_Avatar_1.png" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\GestionEstablecimientos.aspx" />
+    <Content Include="Pages\home.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="Pages\GestionEstablecimientos.aspx.designer.cs">
       <DependentUpon>GestionEstablecimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitio.Master.cs">
       <DependentUpon>Sitio.Master</DependentUpon>
