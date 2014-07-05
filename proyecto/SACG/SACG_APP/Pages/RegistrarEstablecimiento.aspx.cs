@@ -14,11 +14,6 @@ namespace SACG_APP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD:proyecto/SACG/SACG_APP/Pages/RegistrarEstablecimiento.aspx.cs
-            
-=======
-           // AltaEstablecimiento();
->>>>>>> origin/master:proyecto/SACG/SACG_APP/Pages/GestionEstablecimientos.aspx.cs
         }
 
         protected void AddEstablecimiento(object sender, EventArgs e)
@@ -26,7 +21,6 @@ namespace SACG_APP
             IRepoEstablecimiento repo = new RepoEstablecimiento();
             SACG_BLL.Establecimiento est;
             SACG_BLL.Persona per;
-
             try
             {
                 //CREO EL ESTABLECIMIENTO

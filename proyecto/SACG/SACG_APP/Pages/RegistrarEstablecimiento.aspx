@@ -10,14 +10,10 @@
     <asp:Table ID="tab" runat="server" Width="75%" CellSpacing="10" HorizontalAlign="Center">
         <asp:TableRow>
             <asp:TableCell>
-<<<<<<< HEAD:proyecto/SACG/SACG_APP/Pages/RegistrarEstablecimiento.aspx
                 <asp:Label ID="lblDicose" runat="server" Text="DICOSE"></asp:Label>
-=======
-                <asp:Label ID="lblDicose" runat="server" Text="DICOSE">DICOSE</asp:Label>
->>>>>>> origin/master:proyecto/SACG/SACG_APP/Pages/GestionEstablecimientos.aspx
             </asp:TableCell>
             <asp:TableCell>
-                <asp:TextBox ID="txtDicose" runat="server">12</asp:TextBox>
+                <asp:TextBox ID="txtDicose" runat="server"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblDepartamento" runat="server" Text="Departamento"></asp:Label>

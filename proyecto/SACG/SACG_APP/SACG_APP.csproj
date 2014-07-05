@@ -64,7 +64,6 @@
     <Content Include="Pages\ActivarEstablecimiento.aspx" />
     <Content Include="Pages\ModificarEstablecimiento.aspx" />
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
-    <Content Include="Pages\GestionEstablecimientos.aspx" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
