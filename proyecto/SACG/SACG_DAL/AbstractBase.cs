@@ -23,10 +23,8 @@ namespace SACG_DAL
 
         protected IDbConnection Conectar()
         {
-
             cn = new FabricaObjetosConectados().getConexionProveedor(this.proveedor);
             cn.ConnectionString = cadenaConexion;
-
             return cn;
         }
 
@@ -154,7 +152,7 @@ namespace SACG_DAL
             IDbCommand cmd = fab.getComandoProveedor(this.proveedor);
             cmd.CommandText = cadenaComando;
             cmd.CommandType = tipo;
-            if (cn == null) cn = Conectar();
+            if (cn == null || cn.ConnectionString == "") cn = Conectar();
             cmd.Connection = cn;
 
 
