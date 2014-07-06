@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RepoUsuario.cs" />
+    <Compile Include="RepoAnimal.cs" />
     <Compile Include="RepoEstablecimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

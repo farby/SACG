@@ -31,24 +31,6 @@ namespace SACG_APP {
         protected global::System.Web.UI.HtmlControls.HtmlForm frm;
         
         /// <summary>
-        /// mnu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu mnu;
-        
-        /// <summary>
-        /// cph2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cph2;
-        
-        /// <summary>
         /// cph control.
         /// </summary>
         /// <remarks>

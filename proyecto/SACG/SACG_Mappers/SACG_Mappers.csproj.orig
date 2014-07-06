@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="UsuarioMapper.cs" />
-     <Compile Include="AnimalMapper.cs" />
+=======
+    <Compile Include="AnimalMapper.cs" />
+>>>>>>> Stashed changes
     <Compile Include="EstablecimientoMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

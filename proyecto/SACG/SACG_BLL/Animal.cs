@@ -8,22 +8,22 @@ namespace SACG_BLL
 {
     public class Animal
     {
-        private Int32 ID;
+        public Int32 ID{get; set;}
 
-        private Int64 RFID;
+        public Int64 RFID { get; set; }
 
-        private Int64 DICOSE;
+        public Int64 DICOSE { get; set; }
 
-        private Char Sexo;
+        public Char Sexo { get; set; }
 
-        private Int32 AnoNacimiento;
+        public Int32 AnoNacimiento { get; set; }
 
-        private Int32 AnoMuerte;
+        public Int32 AnoMuerte { get; set; }
 
-        private Char EstacionNacimiento;
+        public Char EstacionNacimiento { get; set; }
 
-        private String RazaCruza;
+        public String RazaCruza { get; set; }
 
-        private Evento Evento;
+        public Evento Evento { get; set; }
     }
 }
