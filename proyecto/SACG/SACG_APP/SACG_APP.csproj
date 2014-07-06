@@ -62,6 +62,7 @@
     <Content Include="Content\img\User_Avatar_1.png" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\ActivarEstablecimiento.aspx" />
+    <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\ModificarEstablecimiento.aspx" />
     <Content Include="Pages\RegistrarAnimal.aspx" />
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="Pages\ActivarEstablecimiento.aspx.designer.cs">
       <DependentUpon>ActivarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ModificarEstablecimiento.aspx.cs">
       <DependentUpon>ModificarEstablecimiento.aspx</DependentUpon>

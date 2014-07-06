@@ -32,7 +32,6 @@ namespace SACG_APP
             txtTelefono.Text = est.Telefono.ToString();
             txtEmail.Text = est.Email.ToString();
             txtSuperficie.Text = est.Superficie.ToString();
-
         }
 
         protected void UpdEstablecimiento(object sender, EventArgs e)
@@ -60,9 +59,7 @@ namespace SACG_APP
                 //CREO EL RESPONSABLE
                 per = new Persona(
                     Convert.ToInt64(txtDocumento.Text),
-                    txtNombre.Text,
-                    txtApellido.Text,
-                    txtTelefono.Text
+                    "", "", txtTelefono.Text
                 );
                 //MODIFICO EL ESTABLECIMIENTO Y SU RESPONSABLE
                 repo.Upd(est, per);

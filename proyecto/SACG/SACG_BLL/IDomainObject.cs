@@ -9,5 +9,6 @@ namespace SACG_BLL
     public class IDomainObject
     {
         Int32 ID;
+        public String _user, _role;
     }
 }

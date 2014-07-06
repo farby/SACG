@@ -80,24 +80,10 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell>
-                <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
-            </asp:TableCell>
-            <asp:TableCell>
                 <asp:Label ID="lblTelefono" runat="server" Text="Telefono"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox>
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell>
-                <asp:Label ID="lblApellido" runat="server" Text="Apellido"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>

@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="IRepos\IRepoUsuario.cs" />
+    <Compile Include="Usuario.cs" />
     <Compile Include="Establecimiento.cs" />
     <Compile Include="Evento.cs" />
     <Compile Include="IDomainObject.cs" />
