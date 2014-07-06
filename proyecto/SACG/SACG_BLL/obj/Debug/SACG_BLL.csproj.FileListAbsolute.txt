@@ -3,3 +3,8 @@ C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\bin\Debug\SACG_BLL.pdb
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.dll
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.pdb
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_BLL\bin\Debug\SACG_BLL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_BLL\bin\Debug\SACG_BLL.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_BLL\obj\Debug\SACG_BLL.pdb

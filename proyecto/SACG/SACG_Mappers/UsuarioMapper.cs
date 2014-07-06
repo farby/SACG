@@ -70,9 +70,7 @@ namespace SACG_Mappers
             if (usuario != null)
             {
                 usuario.User = dr.GetString(dr.GetOrdinal("Nick"));
-                usuario.Pass = dr.GetString(dr.GetOrdinal("Pass"));
                 usuario.Role = dr.GetString(dr.GetOrdinal("Rol"));
-                usuario.Estado = dr.GetString(dr.GetOrdinal("Estado"));
             }
         }
     }

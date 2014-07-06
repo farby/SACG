@@ -29,7 +29,7 @@ namespace SACG_Finders
             listaParametros.Add(pUser);
             listaParametros.Add(pPass);
             IDataReader dr = EjecutarReader(CommandType.Text,
-                "Select Nick, Rol from Usuario where Nick = @Nick and Pass = @Pass and Estado = 'Activo'",
+                "Select Nick, Rol from Usuarios where Nick = @Nick and Pass = @Pass and Estado = 'Activo'",
                 listaParametros
             );
             if (dr != null)

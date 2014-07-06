@@ -8,9 +8,7 @@
     <title>Obligatorio Benitez-Bordenave</title>
     <!-- Bootstrap core CSS -->
     <link href="content/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
-
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="frm" runat="server">
@@ -58,13 +56,14 @@
             <li><a href="#contact">Personas</a></li>
             <li><a href="#contact">Reportes</a></li>
             <li><a href="about.aspx">About</a></li>
+            <li><asp:HyperLink ID="lLogin" runat="server" cssclass="navbar-brand"></asp:HyperLink></li>
+            <li><asp:HyperLink ID="aLogin" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
-
-    <div class="container jumbotron ::before">
-                  
+    <div class="container jumbotron">
+       
         <asp:ContentPlaceHolder ID="cph" runat="server">     
         </asp:ContentPlaceHolder>
     </div>

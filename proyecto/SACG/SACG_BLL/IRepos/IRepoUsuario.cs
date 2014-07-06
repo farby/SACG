@@ -8,9 +8,9 @@ namespace SACG_BLL.IRepos
 {
     public interface IRepoUsuario
     {
-        void Add(Usuario e);
-        void Rem(Usuario e);
-        void Upd(Usuario e);
+        void Add(Usuario u);
+        void Rem(Usuario u);
+        void Upd(Usuario u);
         Usuario Login(String user, String pass);
     }
 }

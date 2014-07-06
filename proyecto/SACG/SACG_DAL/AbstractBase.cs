@@ -227,23 +227,17 @@ namespace SACG_DAL
             }
         }
 
-
         public Object EjecutarConsultaEscalar(CommandType tipo, string cadenaComando)
         {
             Object valorEscalar = null;
             IDbCommand cmd = null;
             try
             {
-
                 cmd = this.PrepararComando(tipo, cadenaComando);
-
                 Abrir(cmd.Connection);
                 cmd.Transaction = trn;
                 valorEscalar = cmd.ExecuteScalar();
-
-
                 return valorEscalar;
-
             }
             catch (Exception e)
             {
@@ -266,13 +260,9 @@ namespace SACG_DAL
             try
             {
                 cmd = this.PrepararComando(tipo, cadenaComando, listaParams);
-
                 Abrir(cmd.Connection);
                 cmd.Transaction = trn;
-
                 valorEscalar = cmd.ExecuteScalar();
-
-
                 return valorEscalar;
 
             }
@@ -289,6 +279,7 @@ namespace SACG_DAL
             }
 
         }
+
         public IDataReader EjecutarReader(CommandType tipo, string cadenaComando, List<IDataParameter> listaParams)
         {
             IDataReader miReader = null;
@@ -299,19 +290,17 @@ namespace SACG_DAL
                 Abrir(cmd.Connection);
                 miReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 //aquí no se puede cerrar la conexión, pues el reader es conectado
-
-
                 return miReader;
 
             }
             catch (Exception e)
             {
-
                 System.Diagnostics.Debug.Assert(false, "Error al actualizar:" + e.Message);
                 Cerrar(cmd.Connection);
                 return null;
             }
         }
+
         public IDataReader EjecutarReader(CommandType tipo, string cadenaComando)
         {
             IDataReader miReader = null;
@@ -334,14 +323,12 @@ namespace SACG_DAL
                 return null;
             }
 
-
         }
         public IDataParameter CrearParametro(string nombreParametro, object valorParametro)
         {
             IDataParameter param = new FabricaObjetosConectados().getParametroProveedor(this.proveedor);
             param.ParameterName = nombreParametro;
             param.Value = (valorParametro == null) ? DBNull.Value : valorParametro;
-
             return param;
         }
 

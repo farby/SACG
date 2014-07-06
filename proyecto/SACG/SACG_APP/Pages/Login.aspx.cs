@@ -26,10 +26,16 @@ namespace SACG_APP.Pages
             {
                 //ACTUALIZO EL ESTABLECIMIENTO, SETEANDO SU ESTADO COMO ACTIVO
                 usr = repo.Login(txtUser.Text, txtPass.Text);
-                SACG_BLL.IDomainObject ido = new IDomainObject();
-                ido._user = usr.User;
-                ido._role = usr.Role;
-                lblError.Visible = false;
+                if (usr != null)
+                {
+                    Session["user"] = usr.User;
+                    Session["role"] = usr.Role;
+                    lblError.Visible = false;
+                }
+                else
+                {
+                    lblError.Visible = true;
+                }
             }
             catch
             {
