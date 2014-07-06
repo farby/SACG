@@ -15,7 +15,16 @@ namespace SACG_APP.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"].ToString().Length > 0)
+            {
+                panLogin.Visible = false;
+                panLogout.Visible = true;
+            }
+            else
+            {
+                panLogin.Visible = true;
+                panLogout.Visible = false;
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -24,7 +33,6 @@ namespace SACG_APP.Pages
             Usuario usr;
             try
             {
-                //ACTUALIZO EL ESTABLECIMIENTO, SETEANDO SU ESTADO COMO ACTIVO
                 usr = repo.Login(txtUser.Text, txtPass.Text);
                 if (usr != null)
                 {
@@ -42,6 +50,19 @@ namespace SACG_APP.Pages
                 lblError.Visible = true;
                 throw;
             }
+            finally
+            {
+                if (Session["user"].ToString().Length > 0)
+                {
+                    Response.Redirect("home.aspx");
+                }
+            }
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["user"] = "";
+            Response.Redirect("home.aspx");
         }
     }
 }

@@ -1,0 +1,4 @@
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\bin\Release\SACG_DAL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\bin\Release\SACG_DAL.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\obj\Release\SACG_DAL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_DAL\obj\Release\SACG_DAL.pdb

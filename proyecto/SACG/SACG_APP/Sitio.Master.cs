@@ -11,22 +11,19 @@ namespace SACG_APP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (aLogin.Text == "Cerrar Sesion")
+            if (Session["user"] != null && Session["user"].ToString().Length > 0)
             {
-                Session["user"] = "";
+                aLogin.Text = "Logout";
+                lLogin.Text = "Bienvenido, " + Session["user"];
             }
-            if (Session["user"] == null || Session["user"] == "")
+            else
             {
                 Session["user"] = "";
                 Session["role"] = "";
                 aLogin.Text = "Login";
                 lLogin.Text = "";
             }
-            else
-            {
-                aLogin.Text = "Cerrar Sesion";
-                lLogin.Text = "Bienvenido, " + Session["user"];
-            }
+
         }
     }
 }
