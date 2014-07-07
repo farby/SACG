@@ -28,7 +28,7 @@ namespace SACG_Repos
             m.Eliminar();
         }
 
-        public void Upd(Usuario u)
+        public void Pas(Usuario u)
         {
             UsuarioMapper m;
             //VALIDAR

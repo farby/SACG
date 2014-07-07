@@ -67,6 +67,7 @@
     <Content Include="Pages\RegistrarAnimal.aspx" />
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
     <Content Include="Pages\home.aspx" />
+    <Content Include="Pages\Activo.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="Pages\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Activo.aspx.cs">
+      <DependentUpon>Activo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Activo.aspx.designer.cs">
+      <DependentUpon>Activo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitio.Master.cs">
       <DependentUpon>Sitio.Master</DependentUpon>

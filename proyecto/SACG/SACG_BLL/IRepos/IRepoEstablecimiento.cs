@@ -10,8 +10,9 @@ namespace SACG_BLL.IRepos
     {
         void Add(Establecimiento e, Persona p);
         void Rem(Establecimiento e);
-        void Upd(Establecimiento e, Persona p);
+        void Upd(Establecimiento e);
         void Act(Establecimiento e);
+        void Res(Establecimiento e);
         Establecimiento Fnd(Int64 DICOSE);
         List<Int64> Sby();
         List<Int64> All();

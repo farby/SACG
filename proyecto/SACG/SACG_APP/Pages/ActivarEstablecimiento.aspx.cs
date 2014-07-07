@@ -15,12 +15,14 @@ namespace SACG_APP
         protected void Page_Load(object sender, EventArgs e)
         {
             IRepoEstablecimiento repo = new RepoEstablecimiento();
-            
-            lstPendientes.DataSource = repo.Sby();
-            lstPendientes.DataBind();
+            if (!IsPostBack)
+            {
+                lstPendientes.DataSource = repo.Sby();
+                lstPendientes.DataBind();
 
-            lstActivos.DataSource = repo.All();
-            lstActivos.DataBind();
+                lstActivos.DataSource = repo.All();
+                lstActivos.DataBind();
+            }
         }
 
         protected void btnActivar_Click(object sender, EventArgs e)
@@ -31,17 +33,16 @@ namespace SACG_APP
             {
                 //CREO EL ESTABLECIMIENTO
                 est = new Establecimiento(
-                   Convert.ToInt64(lstPendientes.SelectedValue.ToString())
-                );
-                
+                   Convert.ToInt64(lstPendientes.SelectedItem.Text)
+                ); 
                 //ACTUALIZO EL ESTABLECIMIENTO, SETEANDO SU ESTADO COMO ACTIVO
                 repo.Act(est);
                 lblError.Visible = false;
+                Response.Redirect("home.aspx");
             }
             catch
             {
                 lblError.Visible = true;
-                throw;
             }
         }
 
@@ -53,17 +54,17 @@ namespace SACG_APP
             {
                 //CREO EL ESTABLECIMIENTO
                 est = new Establecimiento(
-                    Convert.ToInt64(lstActivos.SelectedValue.ToString())
+                    Convert.ToInt64(lstActivos.SelectedItem.Text)
                 );
                 //ACTUALIZO EL ESTABLECIMIENTO, SETEANDO SU ESTADO COMO INACTIVO
                 repo.Rem(est);
                 lblError.Visible = false;
+                Response.Redirect("home.aspx");
             }
             catch
             {
                 lblError.Visible = true;
             }
         }
-
     }
 }

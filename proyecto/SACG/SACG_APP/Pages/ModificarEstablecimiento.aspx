@@ -10,10 +10,10 @@
     <asp:Table ID="tab" runat="server" Width="75%" CellSpacing="10" HorizontalAlign="Center">
         <asp:TableRow>
             <asp:TableCell>
-                <asp:Label ID="lblDicose" runat="server" Text="DICOSE" Enabled="False"></asp:Label>
+                <asp:Label ID="lblDicose" runat="server" Text="DICOSE"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:TextBox ID="txtDicose" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDicose" runat="server" Enabled="False"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblDepartamento" runat="server" Text="Departamento"></asp:Label>
@@ -69,7 +69,7 @@
                 <asp:Label ID="lblDocumento" runat="server" Text="Documento"></asp:Label>
             </asp:TableCell>
             <asp:TableCell>
-                <asp:TextBox ID="txtDocumento" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtDocumento" runat="server" Enabled="False"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell>
                 <asp:Label ID="lblSuperficie" runat="server" Text="Superficie"></asp:Label>
@@ -92,10 +92,10 @@
                 <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             </asp:TableCell>
         </asp:TableRow>
-        <asp:TableFooterRow>
-            <asp:TableCell ColumnSpan="4" HorizontalAlign="Center">
-                <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClick="UpdEstablecimiento" CssClass="btn btn-primary"/>
-            </asp:TableCell>
-        </asp:TableFooterRow>
     </asp:Table>
+        <div class="panel-footer center-block">
+            <span class="center-to-right">
+                <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClick="UpdEstablecimiento" CssClass="btn btn-primary"/> 
+            </span>
+        </div>
 </asp:Content>

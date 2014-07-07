@@ -38,6 +38,7 @@ namespace SACG_APP.Pages
                 {
                     Session["user"] = usr.User;
                     Session["role"] = usr.Role;
+                    Session["dicose"] = usr.Dicose.ToString();
                     lblError.Visible = false;
                 }
                 else

@@ -60,7 +60,7 @@ namespace SACG_Mappers
             listaParametros.Add(pUser);
             listaParametros.Add(pPass);
 
-            EjecutarActualizacion(CommandType.StoredProcedure, "spModificarUsuario", listaParametros);
+            EjecutarActualizacion(CommandType.StoredProcedure, "spPassUsuario", listaParametros);
         }
 
         #endregion
@@ -71,6 +71,7 @@ namespace SACG_Mappers
             {
                 usuario.User = dr.GetString(dr.GetOrdinal("Nick"));
                 usuario.Role = dr.GetString(dr.GetOrdinal("Rol"));
+                usuario.Dicose = dr.GetInt64(dr.GetOrdinal("Dicose"));
             }
         }
     }

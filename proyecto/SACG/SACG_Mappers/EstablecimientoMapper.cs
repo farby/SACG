@@ -89,7 +89,6 @@ namespace SACG_Mappers
             IDataParameter pRUT = this.CrearParametro("@RUT", establecimiento.RUT);
             IDataParameter pBPS = this.CrearParametro("@BPS", establecimiento.BPS);
             IDataParameter pRazonSocial = this.CrearParametro("@RazonSocial", establecimiento.RazonSocial);
-            IDataParameter pResponsable = this.CrearParametro("@Responsable", establecimiento.Responsable);
             IDataParameter pDepartamento = this.CrearParametro("@Departamento", establecimiento.Departamento);
             IDataParameter pSPolicial = this.CrearParametro("@SeccionalPolicial", establecimiento.SeccionalPolicial);
             IDataParameter pParaje = this.CrearParametro("@Paraje", establecimiento.Paraje);
@@ -102,7 +101,6 @@ namespace SACG_Mappers
             listaParametros.Add(pRUT);
             listaParametros.Add(pBPS);
             listaParametros.Add(pRazonSocial);
-            listaParametros.Add(pResponsable);
             listaParametros.Add(pDepartamento);
             listaParametros.Add(pSPolicial);
             listaParametros.Add(pParaje);
@@ -122,6 +120,15 @@ namespace SACG_Mappers
             EjecutarActualizacion(CommandType.StoredProcedure, "spActivarEstablecimiento", listaParametros);
         }
 
+        public void Responsable()
+        {
+            List<IDataParameter> listaParametros = new List<IDataParameter>();
+            IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
+            IDataParameter pResponsable = this.CrearParametro("@Responsable", establecimiento.Responsable);
+            listaParametros.Add(pDICOSE);
+            listaParametros.Add(pResponsable);
+            EjecutarActualizacion(CommandType.StoredProcedure, "spResponsableEstablecimiento", listaParametros);
+        }
 
         #endregion
 

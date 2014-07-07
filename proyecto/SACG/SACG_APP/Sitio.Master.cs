@@ -20,10 +20,86 @@ namespace SACG_APP
             {
                 Session["user"] = "";
                 Session["role"] = "";
+                Session["dicose"] = "";
                 aLogin.Text = "Login";
                 lLogin.Text = "";
             }
+            Permisos();
+        }
 
+        private void Permisos()
+        {
+            switch (Session["role"].ToString())
+            {
+                case "Administrador":
+                    aEstablecimientos.Visible = false;
+                    aERegistrar.Visible = false;
+                    aEModificar.Visible = false;
+                    aEActivar.Visible = false;
+                    aEListar.Visible = false;
+
+                    aAnimales.Visible = false;
+                    aARegistrar.Visible = false;
+                    aAEvento.Visible = false;
+                    aATransferencia.Visible = false;
+
+                    aPersonas.Visible = true;
+
+                    aReportes.Visible = false;
+                    break;
+
+                case "Sociedad":
+                    aEstablecimientos.Visible = true;
+                    aERegistrar.Visible = true;
+                    aEModificar.Visible = false;
+                    aEActivar.Visible = true;
+                    aEListar.Visible = true;
+
+                    aAnimales.Visible = true;
+                    aARegistrar.Visible = true;
+                    aAEvento.Visible = true;
+                    aATransferencia.Visible = true;
+
+                    aPersonas.Visible = false;
+
+                    aReportes.Visible = true;
+                    break;
+
+                case "Establecimiento":
+                    aEstablecimientos.Visible = true;
+                    aERegistrar.Visible = false;
+                    aEModificar.Visible = true;
+                    aEActivar.Visible = false;
+                    aEListar.Visible = false;
+
+                    aAnimales.Visible = true;
+                    aARegistrar.Visible = true;
+                    aAEvento.Visible = true;
+                    aATransferencia.Visible = true;
+
+                    aPersonas.Visible = false;
+
+                    aReportes.Visible = true;
+                    break;
+
+                default:
+                    //SIN USUARIO O USUARIO NO LOGUEADO
+                    aEstablecimientos.Visible = true;
+                    aERegistrar.Visible = true;
+                    aEModificar.Visible = false;
+                    aEActivar.Visible = false;
+                    aEListar.Visible = false;
+
+                    aAnimales.Visible = false;
+                    aARegistrar.Visible = false;
+                    aAEvento.Visible = false;
+                    aATransferencia.Visible = false;
+
+                    aPersonas.Visible = false;
+
+                    aReportes.Visible = false;
+                    break;
+            }
         }
     }
 }
