@@ -8,14 +8,20 @@ namespace SACG_BLL
 {
     public class Evento
     {
-        private Int32 ID;
+        public Int32 ID { get; set; }
 
-        private Enum Tipo;
+        public String Tipo { get; set; }
 
-        private String Nombre;
+        public String Nombre { get; set; }
 
-        private DateTime Fecha;
+        public DateTime Fecha { get; set; }
 
-        private String Observaciones;
+        public String Observaciones { get; set; }
+
+        public Int64 idAnimal { get; set; }
+
+        public Int64 DicoseOrg { get; set; }
+
+        public Int64 DicoseDest { get; set; }
     }
 }

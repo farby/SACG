@@ -23,6 +23,9 @@ namespace SACG_APP.Pages
                 FillDicoseList();
                 
                 trRow1.Visible = false;
+                trRow2.Visible = false;
+                trRow3.Visible = false;
+                trRow4.Visible = false;
             }
         }
 
@@ -37,9 +40,31 @@ namespace SACG_APP.Pages
             if (option.Equals("Muerte"))
             {
                 trRow1.Visible = true;
+                trRow2.Visible = false;
+                trRow3.Visible = false;
+                trRow4.Visible = false;
+            }
+            else if (option.Equals("Pesaje"))
+            { 
+                trRow1.Visible = false;
+                trRow2.Visible = true;
+                trRow3.Visible = false;
+                trRow4.Visible = false;
+            }
+            else if (option.Equals("Vacunas"))
+            {
+                trRow1.Visible = false;
+                trRow2.Visible = false;
+                trRow3.Visible = true;
+                trRow4.Visible = false;
             }
             else
-            { trRow1.Visible = false; }
+            {
+                trRow1.Visible = false;
+                trRow2.Visible = false;
+                trRow3.Visible = false;
+                trRow4.Visible = true;
+            }
         }
 
         protected void cancel(Object sender, EventArgs e)
@@ -179,7 +204,7 @@ namespace SACG_APP.Pages
             listEstablecimientos.DataBind();
 
             // Set the default selected item, if desired.
-            stationList.SelectedIndex = 0;
+            listEstablecimientos.SelectedIndex = 0;
 
         }
 
@@ -199,7 +224,31 @@ namespace SACG_APP.Pages
             dr[1] = Value;
 
             return dr;
+        }
 
+
+        protected void AltaTratamiento(object sender, EventArgs e)
+        {
+            IRepoAnimal repo = new RepoAnimal();
+            Animal animal = new Animal();
+            try
+            {
+                animal.DICOSE = Convert.ToInt64(listEstablecimientos.SelectedItem.Value);
+                animal.ID = Convert.ToInt32(listAnimales.SelectedItem.Value);
+
+
+             
+
+                repo.Add(animal);
+                // Aca deberiamos mostrar algun cuadro de dialogo confirmando la creacion del animal.
+                navegarHome();
+            }
+            catch (Exception)
+            {
+
+                Session.Add("error", "No fue posible agregar el animal");
+                Response.Redirect("ErrorPages/Error.aspx");
+            }
         }
     }
 }
