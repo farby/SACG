@@ -12,6 +12,7 @@ namespace SACG_BLL
         public String Pass { get; set; }
         public String Role { get; set; }
         public String Estado { get; set; }
+        public Int64 Dicose { get; set; }
 
         public Usuario(String user, String pass, String role)
         {

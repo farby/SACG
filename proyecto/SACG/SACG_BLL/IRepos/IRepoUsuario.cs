@@ -10,7 +10,7 @@ namespace SACG_BLL.IRepos
     {
         void Add(Usuario u);
         void Rem(Usuario u);
-        void Upd(Usuario u);
+        void Pas(Usuario u);
         Usuario Login(String user, String pass);
     }
 }

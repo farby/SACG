@@ -28,11 +28,11 @@ namespace SACG_Repos
             m.Eliminar();
         }
 
-        public void Upd(Establecimiento e, Persona p)
+        public void Upd(Establecimiento e)
         {
             EstablecimientoMapper m;
             //VALIDAR
-            m = new EstablecimientoMapper(e, p);
+            m = new EstablecimientoMapper(e);
             m.Modificar();
         }
 
@@ -41,6 +41,13 @@ namespace SACG_Repos
             EstablecimientoMapper m;
             m = new EstablecimientoMapper(e);
             m.Activar();
+        }
+
+        public void Res(Establecimiento e)
+        {
+            EstablecimientoMapper m;
+            m = new EstablecimientoMapper(e);
+            m.Responsable();
         }
 
         public Establecimiento Fnd(Int64 DICOSE)

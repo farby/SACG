@@ -23,40 +23,33 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.aspx">SACG</a>
+          <asp:HyperLink ID="aSACG" runat="server" NavigateUrl="~/Pages/#" class="navbar-brand">SACG</asp:HyperLink>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Establecimientos <span class="caret"></span></a>
+              <asp:HyperLink ID="aEstablecimientos" runat="server" NavigateUrl="~/Pages/#" class="dropdown-toggle" data-toggle="dropdown">Establecimientos<span class="caret"></span></asp:HyperLink>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="RegistrarEstablecimiento.aspx">Registrar</a></li>
-                <li><a href="ModificarEstablecimiento.aspx">Modificar</a></li>
-                <li><a href="ActivarEstablecimiento.aspx">Activar / Desactivar</a></li>
-                <li><a href="#">Buscar</a></li>
+                <li><asp:HyperLink ID="aERegistrar" runat="server" NavigateUrl="~/Pages/RegistrarEstablecimiento.aspx">Registrar</asp:HyperLink></li>
+                <li><asp:HyperLink ID="aEModificar" runat="server" NavigateUrl="~/Pages/ModificarEstablecimiento.aspx">Modificar</asp:HyperLink></li>
+                <li><asp:HyperLink ID="aEActivar" runat="server" NavigateUrl="~/Pages/ActivarEstablecimiento.aspx">Activar / Desactivar</asp:HyperLink></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Listado Establecimientos</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><asp:HyperLink ID="aEListar" runat="server" NavigateUrl="~/Pages/#">Listar Todos</asp:HyperLink></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Animales <span class="caret"></span></a>
+              <asp:HyperLink ID="aAnimales" runat="server" NavigateUrl="~/Pages/#" class="dropdown-toggle" data-toggle="dropdown">Animales<span class="caret"></span></asp:HyperLink>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="RegistrarAnimal.aspx">Registrar Animal</a></li>
-                <li><a href="TratamientoSanitario.aspx">Tratamientos</a></li>
-                <li><a href="#">Activar / Desactivar</a></li>
-                <li><a href="#">Buscar</a></li>
+                <li><asp:HyperLink ID="aARegistrar" runat="server" NavigateUrl="~/Pages/RegistrarAnimal.aspx">Registrar</asp:HyperLink></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Listado Establecimientos</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><asp:HyperLink ID="aAEvento" runat="server" NavigateUrl="~/Pages/#">Nuevo Evento</asp:HyperLink></li>
+                <li><asp:HyperLink ID="aATransferencia" runat="server" NavigateUrl="~/Pages/#">Nueva Transferencia</asp:HyperLink></li>
               </ul>
             </li>
-            <li><a href="#contact">Personas</a></li>
-            <li><a href="#contact">Reportes</a></li>
-            <li><a href="about.aspx">About</a></li>
-            <li><asp:HyperLink ID="lLogin" runat="server" cssclass="navbar-brand"></asp:HyperLink></li>
+            <li><asp:HyperLink ID="aPersonas" runat="server" NavigateUrl="~/Pages/#contact">Personas</asp:HyperLink></li>
+            <li><asp:HyperLink ID="aReportes" runat="server" NavigateUrl="~/Pages/#contact">Reportes</asp:HyperLink></li>
+            <li><asp:HyperLink ID="aAbout" runat="server" NavigateUrl="~/Pages/about.aspx">Nosotros</asp:HyperLink></li>
+            <li><asp:HyperLink ID="lLogin" runat="server" NavigateUrl="~/Pages/Activo.aspx" cssclass="navbar-brand"></asp:HyperLink></li>
             <li><asp:HyperLink ID="aLogin" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink></li>
           </ul>
         </div>
