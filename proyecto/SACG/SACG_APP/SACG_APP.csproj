@@ -62,12 +62,14 @@
     <Content Include="Content\img\User_Avatar_1.png" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\ActivarEstablecimiento.aspx" />
+    <Content Include="Pages\ErrorPages\Error.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\ModificarEstablecimiento.aspx" />
     <Content Include="Pages\RegistrarAnimal.aspx" />
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Pages\Activo.aspx" />
+    <Content Include="Pages\TratamientoSanitario.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -87,6 +89,13 @@
     </Compile>
     <Compile Include="Pages\ActivarEstablecimiento.aspx.designer.cs">
       <DependentUpon>ActivarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ErrorPages\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ErrorPages\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -129,6 +138,12 @@
     </Compile>
     <Compile Include="Pages\Activo.aspx.designer.cs">
       <DependentUpon>Activo.aspx</DependentUpon>
+    <Compile Include="Pages\TratamientoSanitario.aspx.cs">
+      <DependentUpon>TratamientoSanitario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TratamientoSanitario.aspx.designer.cs">
+      <DependentUpon>TratamientoSanitario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sitio.Master.cs">
       <DependentUpon>Sitio.Master</DependentUpon>

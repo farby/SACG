@@ -10,7 +10,7 @@
 namespace SACG_APP.Pages {
     
     
-    public partial class RegistrarAnimal {
+    public partial class TratamientoSanitario {
         
         /// <summary>
         /// Label1 control.
@@ -40,13 +40,13 @@ namespace SACG_APP.Pages {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtIdMadre control.
+        /// listAnimales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIdMadre;
+        protected global::System.Web.UI.WebControls.DropDownList listAnimales;
         
         /// <summary>
         /// Label3 control.
@@ -58,13 +58,13 @@ namespace SACG_APP.Pages {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// genderList control.
+        /// listTratamiento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList genderList;
+        protected global::System.Web.UI.WebControls.DropDownList listTratamiento;
         
         /// <summary>
         /// Label4 control.
@@ -83,6 +83,15 @@ namespace SACG_APP.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList yearList;
+        
+        /// <summary>
+        /// trRow1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow trRow1;
         
         /// <summary>
         /// Label5 control.
@@ -119,42 +128,6 @@ namespace SACG_APP.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRaza;
-        
-        /// <summary>
-        /// Label7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
-        
-        /// <summary>
-        /// chkRfid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkRfid;
-        
-        /// <summary>
-        /// txtRfid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRfid;
-        
-        /// <summary>
-        /// btnConfirmar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConfirmar;
         
         /// <summary>
         /// btnCancel control.
