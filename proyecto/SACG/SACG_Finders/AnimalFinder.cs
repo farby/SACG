@@ -23,9 +23,29 @@ namespace SACG_Finders
 
 
         //Buscar Animales de un Establecimiento
+        public List<Int32> todos()
+        {
+            IDataReader dr = EjecutarReader(CommandType.Text,
+                "select ID from Animales where AñoMuerte = 0");
+            List<Int32> listaActivos;
+
+            if (dr != null)
+            {
+                listaActivos = new List<Int32>();
+                while (dr.Read())
+                {
+                    listaActivos.Add(dr.GetInt32(dr.GetOrdinal("ID")));
+                }
+                dr.Close();
+                return listaActivos;
+            }
+            return null;
+        }
+
+        //Buscar Animales de un Establecimiento
         public List<Animal> buscarAnimales(Int64 dicose)
         {
-            List<Animal> animales =null;
+            List<Animal> animales = null;
             List<IDataParameter> listaParametros = new List<IDataParameter>();
             IDataParameter pDICOSE = CrearParametro("@DICOSE", dicose);
             listaParametros.Add(pDICOSE);
@@ -45,7 +65,7 @@ namespace SACG_Finders
                 }
                 dr.Close();
             }
-            return animales;  
+            return animales;
         }
 
         //Buscar Animales de un Establecimiento
@@ -84,7 +104,7 @@ namespace SACG_Finders
             listaParametros.Add(pFecha);
             //DEVUELVO ANIMALES VIVOS SIN PESAR DESDE LA FECHA PASADA
             IDataReader dr = EjecutarReader(CommandType.Text,
-                "select * from Animales where AñoMuerte is null and ID not in" +
+                "select * from Animales where AñoMuerte = 0 and ID not in" +
                 "(select ID from Eventos where Tipo like 'Pesaje' and Fecha > @Fecha)",
                 listaParametros);
             if (dr != null)
@@ -104,24 +124,30 @@ namespace SACG_Finders
 
         public List<String> pesajes(Int32 ID)
         {
-            List<String> animales = null;
             List<IDataParameter> listaParametros = new List<IDataParameter>();
             IDataParameter pID = CrearParametro("@ID", ID);
             listaParametros.Add(pID);
-            //DEVUELVO STRING CON CADA PESAJE PARA EL ANIMAL SELECCIONADO
             IDataReader dr = EjecutarReader(CommandType.Text,
-                "select ('Fecha: ' + CAST(Fecha as varchar(25)) + ' Peso: ' + Observaciones)" +
-                "as Pesaje from Eventos where Tipo like 'Pesaje' and ID = @ID",
+                "select ('Fecha: ' + CAST(Fecha as varchar(25)) + ' Peso: ' + Observaciones) " +
+                "as Pesaje from Eventos where Tipo like 'Pesaje' and Animal = @ID",
                 listaParametros);
+            List<String> list;
+
             if (dr != null)
             {
+                list = new List<String>();
                 while (dr.Read())
                 {
-                    animales.Add(dr.Read().ToString());
+                    list.Add(dr.GetString(dr.GetOrdinal("Pesaje")).ToString());
                 }
                 dr.Close();
+                if (list.Count == 0)
+                {
+                    return null;
+                }
+                return list;
             }
-            return animales;
+            return null;
         }
     
     }

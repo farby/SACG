@@ -177,7 +177,7 @@ namespace SACG_APP.Pages
             listAnimales.DataBind();
 
             // Set the default selected item, if desired.
-            listAnimales.SelectedIndex = 0;
+            //listAnimales.SelectedIndex = 0;
 
         }
 
@@ -237,9 +237,11 @@ namespace SACG_APP.Pages
             IRepoEvento repo = new RepoEvento();
             Animal animal = new Animal();
             Evento evento = new Evento();
+
+            
             try
             {
-                evento.idAnimal= Convert.ToInt32(listAnimales.SelectedItem.Value);
+                evento.idAnimal = Convert.ToInt32(listAnimales.SelectedItem.Value);
                 evento.DicoseOrg = Convert.ToInt64(listEstablecimientos.SelectedItem.Value);
 
                 String option = listTratamiento.SelectedItem.Value;

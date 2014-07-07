@@ -13,7 +13,7 @@ namespace SACG_BLL.IRepos
         void Delete(Animal a);
         List<Animal> sinPesar(DateTime fecha);
         List<String> Pesajes(Int32 id);
-        List<Animal> getAll();
+        List<Int32> getAll();
         List<Animal> getAllByEst(Int64 idEstablecimiento, String sexo);
         Animal find(Int64 dicose);
 

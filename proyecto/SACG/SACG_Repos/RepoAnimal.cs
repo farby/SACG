@@ -37,7 +37,7 @@ namespace SACG_Repos
         {
             //CREO FINDER
             AnimalFinder f = new AnimalFinder();
-            //BUSCO Y DEVUELVO LA LISTA DE ANIMALES SIN PESAR
+            //BUSCO Y DEVUELVO LA LISTA DE ANIMALES
             return f.pesajes(id);
         }
 
@@ -51,9 +51,12 @@ namespace SACG_Repos
             throw new NotImplementedException();
         }
 
-        public List<SACG_BLL.Animal> getAll()
+        public List<Int32> getAll()
         {
-            throw new NotImplementedException();
+            //CREO FINDER
+            AnimalFinder f = new AnimalFinder();
+            //BUSCO Y DEVUELVO LA LISTA DE ANIMALES SIN PESAR
+            return f.todos();
         }
 
         public List<SACG_BLL.Animal> getAllByEst(long idEstablecimiento, string sexo)

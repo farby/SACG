@@ -213,6 +213,7 @@ namespace SACG_APP.Pages
               
                 Session.Add("error", "No fue posible agregar el animal");
                 Response.Redirect("ErrorPages/Error.aspx");
+                throw;
             }
         }
 

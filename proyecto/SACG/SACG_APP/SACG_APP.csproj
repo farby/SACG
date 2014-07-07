@@ -70,6 +70,8 @@
     <Content Include="Pages\RegistrarEstablecimiento.aspx" />
     <Content Include="Pages\home.aspx" />
     <Content Include="Pages\Activo.aspx" />
+    <Content Include="Pages\ReportePesajes.aspx" />
+    <Content Include="Pages\ReporteSinPesar.aspx" />
     <Content Include="Pages\TratamientoSanitario.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -146,6 +148,20 @@
     </Compile>
     <Compile Include="Pages\Activo.aspx.designer.cs">
       <DependentUpon>Activo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReportePesajes.aspx.cs">
+      <DependentUpon>ReportePesajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ReportePesajes.aspx.designer.cs">
+      <DependentUpon>ReportePesajes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ReporteSinPesar.aspx.cs">
+      <DependentUpon>ReporteSinPesar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ReporteSinPesar.aspx.designer.cs">
+      <DependentUpon>ReporteSinPesar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\TratamientoSanitario.aspx.cs">
       <DependentUpon>TratamientoSanitario.aspx</DependentUpon>

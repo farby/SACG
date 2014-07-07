@@ -47,7 +47,15 @@
               </ul>
             </li>
             <li><asp:HyperLink ID="aPersonas" runat="server" NavigateUrl="~/Pages/#contact">Personas</asp:HyperLink></li>
-            <li><asp:HyperLink ID="aReportes" runat="server" NavigateUrl="~/Pages/#contact">Reportes</asp:HyperLink></li>
+            <li class="dropdown">
+              <asp:HyperLink ID="aReportes" runat="server" NavigateUrl="~/Pages/#" class="dropdown-toggle" data-toggle="dropdown">Reportes<span class="caret"></span></asp:HyperLink>
+              <ul class="dropdown-menu" role="menu">
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/*.aspx">Stock Establecimiento</asp:HyperLink></li>
+                <li class="divider"></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Pages/ReportePesajes.aspx">Pesajes</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/ReporteSinPesar.aspx">Animales sin Pesar</asp:HyperLink></li>
+              </ul>
+            </li>
             <li><asp:HyperLink ID="aAbout" runat="server" NavigateUrl="~/Pages/about.aspx">Nosotros</asp:HyperLink></li>
             <li><asp:HyperLink ID="lLogin" runat="server" NavigateUrl="~/Pages/Activo.aspx" cssclass="navbar-brand"></asp:HyperLink></li>
             <li><asp:HyperLink ID="aLogin" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink></li>

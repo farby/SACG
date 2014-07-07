@@ -25,5 +25,10 @@ namespace SACG_BLL
         public String RazaCruza { get; set; }
 
         public Evento Evento { get; set; }
+
+        public Animal()
+        {
+
+        }
     }
 }
