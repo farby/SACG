@@ -40,62 +40,49 @@ namespace SACG_Mappers
             listaParametros.Add(pAno);
             listaParametros.Add(pEstacion);
             listaParametros.Add(pRaza);
-           
 
-            EjecutarActualizacion(CommandType.StoredProcedure, "spAltaAnimal", listaParametros);
+            try
+            {
+                if (animal.RFID == 0)
+                {
+                    EjecutarActualizacion(CommandType.StoredProcedure, "spAltaAnimal", listaParametros);
+                }
+                else
+                {
+                    IDataParameter pRfid = CrearParametro("@RFID", animal.RFID);
+                    listaParametros.Add(pRfid);
+                    EjecutarActualizacion(CommandType.StoredProcedure, "spAltaAnimalRFID", listaParametros);
+                }
+                
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
         }
-
-        /*
-        public void Eliminar()
-        {
-            List<IDataParameter> listaParametros = new List<IDataParameter>();
-            IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
-            listaParametros.Add(pDICOSE);
-            EjecutarActualizacion(CommandType.StoredProcedure, "spBajaEstablecimiento", listaParametros);
-        }
-
-        public void Modificar()
-        {
-            List<IDataParameter> listaParametros = new List<IDataParameter>();
-
-            IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
-            IDataParameter pRUT = this.CrearParametro("@RUT", establecimiento.RUT);
-            IDataParameter pBPS = this.CrearParametro("@BPS", establecimiento.BPS);
-            IDataParameter pRazonSocial = this.CrearParametro("@RazonSocial", establecimiento.RazonSocial);
-            IDataParameter pResponsable = this.CrearParametro("@Responsable", establecimiento.Responsable);
-            IDataParameter pDepartamento = this.CrearParametro("@Departamento", establecimiento.Departamento);
-            IDataParameter pSPolicial = this.CrearParametro("@SeccionalPolicial", establecimiento.SeccionalPolicial);
-            IDataParameter pParaje = this.CrearParametro("@Paraje", establecimiento.Paraje);
-            IDataParameter pDireccion = this.CrearParametro("@Direccion", establecimiento.Direccion);
-            IDataParameter pTelefono = this.CrearParametro("@Telefono", establecimiento.Telefono);
-            IDataParameter pEmail = this.CrearParametro("@Email", establecimiento.Email);
-            IDataParameter pSuperficie = this.CrearParametro("@Superficie", establecimiento.Superficie);
-
-            listaParametros.Add(pDICOSE);
-            listaParametros.Add(pRUT);
-            listaParametros.Add(pBPS);
-            listaParametros.Add(pRazonSocial);
-            listaParametros.Add(pResponsable);
-            listaParametros.Add(pDepartamento);
-            listaParametros.Add(pSPolicial);
-            listaParametros.Add(pParaje);
-            listaParametros.Add(pDireccion);
-            listaParametros.Add(pTelefono);
-            listaParametros.Add(pEmail);
-            listaParametros.Add(pSuperficie);
-
-            EjecutarActualizacion(CommandType.StoredProcedure, "spModificarEstablecimiento", listaParametros);
-        }
-
-        public void Activar()
-        {
-            List<IDataParameter> listaParametros = new List<IDataParameter>();
-            IDataParameter pDICOSE = this.CrearParametro("@DICOSE", establecimiento.DICOSE);
-            listaParametros.Add(pDICOSE);
-            EjecutarActualizacion(CommandType.StoredProcedure, "spActivarEstablecimiento", listaParametros);
-        }
-        */
 
         #endregion
+
+
+
+        public void load(IDataRecord dr)
+        {
+            if (animal != null)
+            {
+                animal.RFID = dr.GetInt64(dr.GetOrdinal("RFID"));
+                animal.DICOSE = dr.GetInt64(dr.GetOrdinal("DICOSE"));
+                animal.Sexo = Convert.ToChar(dr.GetString(dr.GetOrdinal("Sexo")));
+                animal.AnoNacimiento = dr.GetInt32(dr.GetOrdinal("AñoNacimiento"));
+                animal.AnoMuerte = dr.GetInt32(dr.GetOrdinal("AñoMuerte"));
+                
+                animal.EstacionNacimiento = Convert.ToChar(dr.GetString(dr.GetOrdinal("EstacionNacimiento")));
+                animal.RazaCruza = dr.GetString(dr.GetOrdinal("RazaCruza"));
+                animal.ID = dr.GetInt32(dr.GetOrdinal("ID"));
+            }
+        }
+
+
     }
 }

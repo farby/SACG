@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SACG_BLL.IRepos;
 using SACG_Mappers;
+using SACG_Finders;
 
 namespace SACG_Repos
 {
@@ -12,10 +13,19 @@ namespace SACG_Repos
     {
         public void Add(SACG_BLL.Animal a)
         {
-            AnimalMapper mapper = new AnimalMapper(a);
-            mapper.Insertar();
-            //
-            mapper = null;
+            try
+            {
+                AnimalMapper mapper = new AnimalMapper(a);
+                mapper.Insertar();
+                mapper = null;
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
+
         }
 
         public void Update(SACG_BLL.Animal a)
@@ -35,7 +45,8 @@ namespace SACG_Repos
 
         public List<SACG_BLL.Animal> getAllByEst(long idEstablecimiento)
         {
-            throw new NotImplementedException();
+            AnimalFinder finder = new AnimalFinder();
+            return finder.buscarAnimales(idEstablecimiento);
         }
 
         public SACG_BLL.Animal find(long dicose)

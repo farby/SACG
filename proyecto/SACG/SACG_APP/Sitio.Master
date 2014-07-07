@@ -44,7 +44,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Animales <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="RegistrarAnimal.aspx">Registrar Animal</a></li>
-                <li><a href="#">Modificar</a></li>
+                <li><a href="TratamientoSanitario.aspx">Tratamientos</a></li>
                 <li><a href="#">Activar / Desactivar</a></li>
                 <li><a href="#">Buscar</a></li>
                 <li class="divider"></li>

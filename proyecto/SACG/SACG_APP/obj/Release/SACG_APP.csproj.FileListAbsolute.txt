@@ -13,3 +13,18 @@ C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_APP\bin\SACG_
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.csprojResolveAssemblyReference.cache
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.dll
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_APP.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_APP.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_BLL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Repos.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Mappers.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Finders.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_DAL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_BLL.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Repos.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Mappers.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_Finders.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\bin\SACG_DAL.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.csprojResolveAssemblyReference.cache
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_APP\obj\Release\SACG_APP.pdb

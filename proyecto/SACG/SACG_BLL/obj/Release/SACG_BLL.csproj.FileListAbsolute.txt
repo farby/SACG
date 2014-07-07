@@ -1,0 +1,4 @@
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\bin\Release\SACG_BLL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\bin\Release\SACG_BLL.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\obj\Release\SACG_BLL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_BLL\obj\Release\SACG_BLL.pdb

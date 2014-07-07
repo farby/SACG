@@ -59,6 +59,7 @@ namespace SACG_Repos
             return f.Pendientes();
         }
 
+        //Retorna la lista de Establecimientos activos.
         public List<Int64> All()
         {
             //CREO FINDER
