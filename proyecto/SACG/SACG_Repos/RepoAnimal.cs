@@ -21,11 +21,24 @@ namespace SACG_Repos
             }
             catch (Exception)
             {
-                
                 throw;
             }
+        }
 
+        public List<SACG_BLL.Animal> sinPesar(DateTime fecha)
+        {
+            //CREO FINDER
+            AnimalFinder f = new AnimalFinder();
+            //BUSCO Y DEVUELVO LA LISTA DE ANIMALES SIN PESAR
+            return f.reporteSinPesar(fecha);
+        }
 
+        public List<String> Pesajes(Int32 id)
+        {
+            //CREO FINDER
+            AnimalFinder f = new AnimalFinder();
+            //BUSCO Y DEVUELVO LA LISTA DE ANIMALES SIN PESAR
+            return f.pesajes(id);
         }
 
         public void Update(SACG_BLL.Animal a)
