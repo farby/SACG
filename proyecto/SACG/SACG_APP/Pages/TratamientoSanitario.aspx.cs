@@ -19,51 +19,84 @@ namespace SACG_APP.Pages
             if (!IsPostBack)
             {
                 FillTreatmentList();
-                FillYearList();
                 FillDicoseList();
-                
+                // Escondo todas las rows.
                 trRow1.Visible = false;
                 trRow2.Visible = false;
                 trRow3.Visible = false;
                 trRow4.Visible = false;
+                trRow5.Visible = false;
+                trRow6.Visible = false;
             }
         }
 
         protected void Selection_Change(Object sender, EventArgs e)
         {
-            FillAnimalList();
+            FillAnimalList(null); // Solo con los animales vivos.
         }
 
         protected void treatment_change(Object sender, EventArgs e)
         {
             String option = listTratamiento.SelectedItem.Value;
-            if (option.Equals("Muerte"))
+            if (option.Equals("MUERTE"))
             {
                 trRow1.Visible = true;
                 trRow2.Visible = false;
                 trRow3.Visible = false;
                 trRow4.Visible = false;
+                trRow5.Visible = false;
+                trRow6.Visible = false;
+                FillAnimalList(null); // Solo con los animales vivos.
             }
-            else if (option.Equals("Pesaje"))
+            else if (option.Equals("PESAJE"))
             { 
                 trRow1.Visible = false;
                 trRow2.Visible = true;
                 trRow3.Visible = false;
                 trRow4.Visible = false;
+                trRow5.Visible = false;
+                trRow6.Visible = false;
+                FillAnimalList(null); // Solo con los animales vivos.
             }
-            else if (option.Equals("Vacunas"))
+            else if (option.Equals("VACUNAS"))
             {
                 trRow1.Visible = false;
                 trRow2.Visible = false;
                 trRow3.Visible = true;
                 trRow4.Visible = false;
+                trRow5.Visible = false;
+                trRow6.Visible = false;
+                FillAnimalList(null); // Solo con los animales vivos.
+            }
+            else if (option.Equals("TRATAMIENTOS"))
+            {
+                trRow1.Visible = false;
+                trRow2.Visible = false;
+                trRow3.Visible = false;
+                trRow4.Visible = true;
+                trRow5.Visible = false;
+                trRow6.Visible = false;
+                FillAnimalList(null); // Solo con los animales vivos.
+            }
+            else if (option.Equals("PRENIA"))
+            {
+                trRow1.Visible = false;
+                trRow2.Visible = false;
+                trRow3.Visible = false;
+                trRow4.Visible = false;
+                trRow5.Visible = true;
+                trRow6.Visible = false;
+                FillAnimalList("H"); // Solo con los animales vivos.
             }
             else
             {
                 trRow1.Visible = false;
                 trRow2.Visible = false;
                 trRow3.Visible = false;
-                trRow4.Visible = true;
+                trRow4.Visible = false;
+                trRow5.Visible = false;
+                trRow6.Visible = true;
+                FillAnimalList("H"); // Solo con los animales vivos.
             }
         }
 
@@ -75,6 +108,8 @@ namespace SACG_APP.Pages
         // Navega a la home de la aplicacion.
         private void navegarHome() { Response.Redirect("home.aspx"); }
 
+
+        #region Listas
         protected void FillTreatmentList()
         {
 
@@ -85,12 +120,16 @@ namespace SACG_APP.Pages
             dt.Columns.Add(new DataColumn("TextField", typeof(String)));
             dt.Columns.Add(new DataColumn("ValueField", typeof(String)));
 
+            IRepoEvento repo = new RepoEvento();
+            List<TipoEvento> tipos = repo.getTipoEventosPorTipo("SANITARIO");
+
             // Populate the table with sample values.
             dt.Rows.Add(CreateRow("", "", dt));
-            dt.Rows.Add(CreateRow("Muerte", "Muerte", dt));
-            dt.Rows.Add(CreateRow("Pesaje", "Pesaje", dt));
-            dt.Rows.Add(CreateRow("Vacunas", "Vacunas", dt));
-            dt.Rows.Add(CreateRow("Tratamiento", "Tratamiento", dt));
+
+            foreach (TipoEvento tipo in tipos)
+            {
+                dt.Rows.Add(CreateRow(tipo.Nombre, tipo.Nombre, dt));
+            }
 
             // Create a DataView from the DataTable to act as the data source
             // for the DropDownList control.
@@ -108,46 +147,12 @@ namespace SACG_APP.Pages
 
         }
 
-        protected void FillYearList()
-        {
-
-            // Create a table to store data for the DropDownList control.
-            DataTable dt = new DataTable();
-
-            // Define the columns of the table.
-            dt.Columns.Add(new DataColumn("TextField", typeof(String)));
-            dt.Columns.Add(new DataColumn("ValueField", typeof(String)));
-
-            // Populate the table with sample values.
-            int year;
-            int actualYear = DateTime.Now.Year;
-            for (year = 1980; year <= actualYear; year++)
-            {
-                dt.Rows.Add(CreateRow(Convert.ToString(year), Convert.ToString(year), dt));
-            }
-
-            // Create a DataView from the DataTable to act as the data source
-            // for the DropDownList control.
-
-            yearList.DataSource = new DataView(dt);
-            yearList.DataTextField = "TextField";
-            yearList.DataValueField = "ValueField";
-
-            // Bind the data to the control.
-            yearList.DataBind();
-
-            // Set the default selected item, if desired.
-            yearList.SelectedIndex = 0;
-
-
-        }
-
-        protected void FillAnimalList()
+        protected void FillAnimalList(string sexo)
         {
             Int64 dicose = Convert.ToInt64(listEstablecimientos.SelectedItem.Value);
 
             IRepoAnimal repo = new RepoAnimal();
-            List<Animal> animales = repo.getAllByEst(dicose);
+            List<Animal> animales = repo.getAllByEst(dicose, sexo);
             // Create a table to store data for the DropDownList control.
             DataTable dt = new DataTable();
 
@@ -225,21 +230,65 @@ namespace SACG_APP.Pages
 
             return dr;
         }
-
+        #endregion
 
         protected void AltaTratamiento(object sender, EventArgs e)
         {
-            IRepoAnimal repo = new RepoAnimal();
+            IRepoEvento repo = new RepoEvento();
             Animal animal = new Animal();
+            Evento evento = new Evento();
             try
             {
-                animal.DICOSE = Convert.ToInt64(listEstablecimientos.SelectedItem.Value);
-                animal.ID = Convert.ToInt32(listAnimales.SelectedItem.Value);
+                evento.idAnimal= Convert.ToInt32(listAnimales.SelectedItem.Value);
+                evento.DicoseOrg = Convert.ToInt64(listEstablecimientos.SelectedItem.Value);
 
+                String option = listTratamiento.SelectedItem.Value;
+                if (option.Equals("MUERTE"))
+                {
+                    evento.Fecha = Calendar1.SelectedDate;
+                    evento.Nombre = "Muerte";
+                    evento.Tipo = evento.Nombre;
+                    evento.Observaciones = "";
+                }
+                else if (option.Equals("PESAJE"))
+                {
+                    evento.Fecha = Calendar2.SelectedDate;
+                    evento.Nombre = "Pesaje";
+                    evento.Tipo = evento.Nombre;
+                    evento.Observaciones = txtKilos.Text;
+                }
+                else if (option.Equals("VACUNAS"))
+                {
+                    evento.Fecha = DateTime.Now;
+                    evento.Nombre = txtNombreVacuna.Text;
+                    evento.Tipo = "VACUNAS";
+                    evento.Observaciones = txtDosisVacuna.Text;
+                }
+                else if (option.Equals("TRATAMIENTO"))
+                {
+                    evento.Fecha = DateTime.Now;
+                    evento.Nombre = txtNomTratamiento.Text;
+                    evento.Tipo = "TRATAMIENTO";
+                    evento.Observaciones = txtAplicacionTratamiento.Text;
+                }
+                else if (option.Equals("PRENIA"))
+                {
+                    evento.Fecha = Calendar3.SelectedDate;
+                    evento.Nombre = "PRENIA";
+                    evento.Tipo = "PRENIA";
+                    evento.Observaciones = txtPrenia.Text;
+                }
+                else
+                {
+                    evento.Fecha = Calendar4.SelectedDate;
+                    evento.Nombre = "NACIMIENTOS";
+                    evento.Tipo = "NACIMIENTOS";
+                    evento.Observaciones = txtParto.Text;
+                }
+ 
 
-             
-
-                repo.Add(animal);
+                repo.Add(evento);
+               
                 // Aca deberiamos mostrar algun cuadro de dialogo confirmando la creacion del animal.
                 navegarHome();
             }

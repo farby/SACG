@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="IRepos\IRepoEvento.cs" />
     <Compile Include="IRepos\IRepoUsuario.cs" />
+    <Compile Include="TipoEvento.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Establecimiento.cs" />
     <Compile Include="Evento.cs" />
@@ -49,7 +51,6 @@
     <Compile Include="IRepos\IRepoEstablecimiento.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transferencia.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

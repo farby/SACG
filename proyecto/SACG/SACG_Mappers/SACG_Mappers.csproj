@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventoMapper.cs" />
+    <Compile Include="TipoEventoMapper.cs" />
     <Compile Include="UsuarioMapper.cs" />
-     <Compile Include="AnimalMapper.cs" />
+    <Compile Include="AnimalMapper.cs" />
     <Compile Include="EstablecimientoMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

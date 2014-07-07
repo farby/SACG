@@ -1,6 +1,0 @@
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_DAL\bin\Debug\SACG_DAL.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_DAL\bin\Debug\SACG_DAL.pdb
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.csprojResolveAssemblyReference.cache
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.dll
-C:\ORT\codigo\SACG\proyecto\SACG\SACG_DAL\obj\Debug\SACG_DAL.pdb
-

@@ -56,15 +56,25 @@ namespace SACG_Repos
             throw new NotImplementedException();
         }
 
-        public List<SACG_BLL.Animal> getAllByEst(long idEstablecimiento)
+        public List<SACG_BLL.Animal> getAllByEst(long idEstablecimiento, string sexo)
         {
             AnimalFinder finder = new AnimalFinder();
-            return finder.buscarAnimales(idEstablecimiento);
+            if (sexo == null)
+            {
+                return finder.buscarAnimales(idEstablecimiento);
+            }
+            else
+            {
+                return finder.buscarAnimales(idEstablecimiento, sexo);
+            }
+           
         }
 
         public SACG_BLL.Animal find(long dicose)
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

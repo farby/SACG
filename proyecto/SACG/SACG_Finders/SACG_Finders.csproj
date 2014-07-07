@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimalFinder.cs" />
+    <Compile Include="TipoEventoFinder.cs" />
     <Compile Include="UsuarioFinder.cs" />
     <Compile Include="EstablecimientoFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

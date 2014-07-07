@@ -22,10 +22,8 @@
                         </asp:DropDownList>
                 </td>
                 <td>
-                    <asp:Label ID="Label2" runat="server">ID Madre (Opcional)</asp:Label>
                 </td>
                 <td>
-                   <asp:TextBox ID="txtIdMadre" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
             <tr>

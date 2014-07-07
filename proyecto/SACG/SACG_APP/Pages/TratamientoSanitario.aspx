@@ -50,6 +50,7 @@
                     <asp:DropDownList ID="yearList" AutoPostBack="True"
                         OnSelectedIndexChanged="Selection_Change" runat="server">
                     </asp:DropDownList>
+                    <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                 </td>
             </tr>
             <tr id ="trRow2" runat="server">
@@ -57,9 +58,7 @@
                     <asp:Label ID="Label5" runat="server">Fecha</asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="yearList2" AutoPostBack="True"
-                        OnSelectedIndexChanged="Selection_Change" runat="server">
-                    </asp:DropDownList>
+                    <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
                 </td>
                 <td>
                     <asp:Label ID="Label6" runat="server">Peso Registrado</asp:Label>
@@ -94,6 +93,34 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtAplicacionTratamiento" runat="server" class="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr id="trRow5" runat="server">
+                <td>
+                    <asp:Label ID="Label11" runat="server">Preniada desde</asp:Label>
+                </td>
+                <td>
+                  <asp:Calendar ID="Calendar3" runat="server"></asp:Calendar>
+                </td>
+                <td>
+                    <asp:Label ID="Label12" runat="server">Observaciones</asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtPrenia" runat="server" class="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr id="trRow6" runat="server">
+                <td>
+                    <asp:Label ID="Label13" runat="server">Fecha Parto</asp:Label>
+                </td>
+                <td>
+                  <asp:Calendar ID="Calendar4" runat="server"></asp:Calendar>
+                </td>
+                <td>
+                    <asp:Label ID="Label14" runat="server">Observaciones</asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtParto" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
 

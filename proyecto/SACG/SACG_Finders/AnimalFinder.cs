@@ -48,6 +48,34 @@ namespace SACG_Finders
             return animales;  
         }
 
+        //Buscar Animales de un Establecimiento
+        public List<Animal> buscarAnimales(Int64 dicose, String sexo)
+        {
+            List<Animal> animales = null;
+            List<IDataParameter> listaParametros = new List<IDataParameter>();
+            IDataParameter pDICOSE = CrearParametro("@DICOSE", dicose);
+            IDataParameter pSexo = CrearParametro("@SEXO", sexo);
+            listaParametros.Add(pDICOSE);
+            listaParametros.Add(pSexo);
+            IDataReader dr = EjecutarReader(CommandType.Text,
+                "select * from Animales where DICOSE = @DICOSE and SEXO = @SEXO and AñoMuerte = 0",
+                listaParametros);
+
+            if (dr != null)
+            {
+                animales = new List<Animal>();
+                while (dr.Read())
+                {
+                    Animal obj = new Animal();
+                    AnimalMapper mapper = new AnimalMapper(obj);
+                    mapper.load(dr);
+                    animales.Add(obj);
+                }
+                dr.Close();
+            }
+            return animales;
+        }
+
         public List<Animal> reporteSinPesar(DateTime fecha)
         {
             List<Animal> animales = null;

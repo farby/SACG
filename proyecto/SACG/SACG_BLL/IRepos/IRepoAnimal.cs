@@ -14,7 +14,7 @@ namespace SACG_BLL.IRepos
         List<Animal> sinPesar(DateTime fecha);
         List<String> Pesajes(Int32 id);
         List<Animal> getAll();
-        List<Animal> getAllByEst(Int64 idEstablecimiento);
+        List<Animal> getAllByEst(Int64 idEstablecimiento, String sexo);
         Animal find(Int64 dicose);
 
     }
