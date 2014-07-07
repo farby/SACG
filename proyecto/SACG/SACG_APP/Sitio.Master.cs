@@ -41,7 +41,7 @@ namespace SACG_APP
                     aAnimales.Visible = false;
                     aARegistrar.Visible = false;
                     aAEvento.Visible = false;
-                    aATransferencia.Visible = false;
+                   // aATransferencia.Visible = false;
 
                     aPersonas.Visible = true;
 
@@ -58,7 +58,7 @@ namespace SACG_APP
                     aAnimales.Visible = true;
                     aARegistrar.Visible = true;
                     aAEvento.Visible = true;
-                    aATransferencia.Visible = true;
+                    //aATransferencia.Visible = true;
 
                     aPersonas.Visible = false;
 
@@ -75,7 +75,7 @@ namespace SACG_APP
                     aAnimales.Visible = true;
                     aARegistrar.Visible = true;
                     aAEvento.Visible = true;
-                    aATransferencia.Visible = true;
+                    //aATransferencia.Visible = true;
 
                     aPersonas.Visible = false;
 
@@ -93,7 +93,7 @@ namespace SACG_APP
                     aAnimales.Visible = false;
                     aARegistrar.Visible = false;
                     aAEvento.Visible = false;
-                    aATransferencia.Visible = false;
+                   // aATransferencia.Visible = false;
 
                     aPersonas.Visible = false;
 

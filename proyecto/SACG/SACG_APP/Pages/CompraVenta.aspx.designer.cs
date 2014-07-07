@@ -7,171 +7,135 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SACG_APP {
+namespace SACG_APP.Pages {
     
     
-    public partial class Site {
+    public partial class CompraVenta {
         
         /// <summary>
-        /// head control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// frm control.
+        /// listEstablecimientos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frm;
+        protected global::System.Web.UI.WebControls.DropDownList listEstablecimientos;
         
         /// <summary>
-        /// aSACG control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aSACG;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// aEstablecimientos control.
+        /// listEstablecimientosDestino control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aEstablecimientos;
+        protected global::System.Web.UI.WebControls.DropDownList listEstablecimientosDestino;
         
         /// <summary>
-        /// aERegistrar control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aERegistrar;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// aEModificar control.
+        /// listOperacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aEModificar;
+        protected global::System.Web.UI.WebControls.DropDownList listOperacion;
         
         /// <summary>
-        /// aEActivar control.
+        /// Label4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aEActivar;
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// aEListar control.
+        /// listAnimales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aEListar;
+        protected global::System.Web.UI.WebControls.DropDownList listAnimales;
         
         /// <summary>
-        /// aAnimales control.
+        /// Label5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aAnimales;
+        protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// aARegistrar control.
+        /// Calendar2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aARegistrar;
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
         
         /// <summary>
-        /// aAEvento control.
+        /// Label6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aAEvento;
+        protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// aATransferencia control.
+        /// txtObs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aATransferencia;
+        protected global::System.Web.UI.WebControls.TextBox txtObs;
         
         /// <summary>
-        /// aPersonas control.
+        /// btnConfirmar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aPersonas;
+        protected global::System.Web.UI.WebControls.Button btnConfirmar;
         
         /// <summary>
-        /// aReportes control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aReportes;
-        
-        /// <summary>
-        /// aAbout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aAbout;
-        
-        /// <summary>
-        /// lLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lLogin;
-        
-        /// <summary>
-        /// aLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink aLogin;
-        
-        /// <summary>
-        /// cph control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cph;
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

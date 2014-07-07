@@ -7,3 +7,12 @@ C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Mappers\bin\D
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.csprojResolveAssemblyReference.cache
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.dll
 C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_Mappers.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_Mappers.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_BLL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_DAL.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_BLL.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\bin\Debug\SACG_DAL.pdb
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.csprojResolveAssemblyReference.cache
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.dll
+C:\ORT\codigo\SACG\proyecto\SACG\SACG_Mappers\obj\Debug\SACG_Mappers.pdb

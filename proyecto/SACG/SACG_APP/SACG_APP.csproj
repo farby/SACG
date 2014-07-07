@@ -62,6 +62,7 @@
     <Content Include="Content\img\User_Avatar_1.png" />
     <Content Include="Pages\about.aspx" />
     <Content Include="Pages\ActivarEstablecimiento.aspx" />
+    <Content Include="Pages\CompraVenta.aspx" />
     <Content Include="Pages\ErrorPages\Error.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\ModificarEstablecimiento.aspx" />
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="Pages\ActivarEstablecimiento.aspx.designer.cs">
       <DependentUpon>ActivarEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CompraVenta.aspx.cs">
+      <DependentUpon>CompraVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CompraVenta.aspx.designer.cs">
+      <DependentUpon>CompraVenta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ErrorPages\Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
