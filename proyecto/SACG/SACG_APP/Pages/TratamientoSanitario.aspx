@@ -37,9 +37,12 @@
                 </td>
                 <td>
                     <asp:DropDownList ID="listTratamiento" AutoPostBack="True"
-                        OnSelectedIndexChanged="Selection_Change" runat="server">
+                        OnSelectedIndexChanged="treatment_change" runat="server">
                     </asp:DropDownList>
                 </td>
+                <td></td><td></td>
+            </tr>
+            <tr id ="trRow1" runat="server">
                 <td>
                     <asp:Label ID="Label4" runat="server">Fecha</asp:Label>
                 </td>
@@ -49,26 +52,55 @@
                     </asp:DropDownList>
                 </td>
             </tr>
-            <tr id ="trRow1" runat="server">
+            <tr id ="trRow2" runat="server">
                 <td>
-                    <asp:Label ID="Label5" runat="server">Estacion del anio</asp:Label>
+                    <asp:Label ID="Label5" runat="server">Fecha</asp:Label>
                 </td>
                 <td>
-                    <asp:DropDownList ID="stationList" AutoPostBack="True"
-                    OnSelectedIndexChanged="Selection_Change" runat="server" class="dropdown">
+                    <asp:DropDownList ID="yearList2" AutoPostBack="True"
+                        OnSelectedIndexChanged="Selection_Change" runat="server">
                     </asp:DropDownList>
                 </td>
                 <td>
-                    <asp:Label ID="Label6" runat="server">RazaCruza</asp:Label>
+                    <asp:Label ID="Label6" runat="server">Peso Registrado</asp:Label>
                 </td>
                 <td>
-                   <asp:TextBox ID="txtRaza" runat="server" class="form-control"></asp:TextBox>
+                   <asp:TextBox ID="txtKilos" runat="server" class="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr id="trRow3" runat="server">
+                <td>
+                    <asp:Label ID="Label7" runat="server">Nombre</asp:Label>
+                </td>
+                <td>
+                   <asp:TextBox ID="txtNombreVacuna" runat="server" class="form-control"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label8" runat="server">Dosificacion</asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtDosisVacuna" runat="server" class="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr id="trRow4" runat="server">
+                <td>
+                    <asp:Label ID="Label9" runat="server">Nombre Tratamiento</asp:Label>
+                </td>
+                <td>
+                   <asp:TextBox ID="txtNomTratamiento" runat="server" class="form-control"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Label ID="Label10" runat="server">Aplicacion</asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtAplicacionTratamiento" runat="server" class="form-control"></asp:TextBox>
                 </td>
             </tr>
 
         </table>
         <div class="panel-footer center-block">
             <span class="center-to-right">
+                <asp:Button ID="btnConfirmar" runat="server" Text="Confirmar" OnClick="AltaTratamiento" CssClass="btn btn-primary" />
                 <asp:Button ID="btnCancel" runat="server" Text="Cancelar" OnClick="cancel" CssClass="btn btn-primary" />
             </span>
         </div>
