@@ -1,16 +1,3 @@
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.pdb
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_BLL.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_DAL.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Finders.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Mappers.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_BLL.pdb
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_DAL.pdb
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Finders.pdb
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Mappers.pdb
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.csprojResolveAssemblyReference.cache
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.dll
-C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.pdb
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.dll
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.pdb
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_BLL.dll
@@ -24,3 +11,16 @@ C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Mappers.pdb
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.csprojResolveAssemblyReference.cache
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.dll
 C:\ORT\codigo\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Repos.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_BLL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_DAL.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Finders.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Mappers.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_BLL.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_DAL.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Finders.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\bin\Release\SACG_Mappers.pdb
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.csprojResolveAssemblyReference.cache
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.dll
+C:\Users\Fabricio Benitez\Documents\GitHub\SACG\proyecto\SACG\SACG_Repos\obj\Release\SACG_Repos.pdb

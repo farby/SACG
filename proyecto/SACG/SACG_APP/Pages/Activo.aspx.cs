@@ -27,6 +27,7 @@ namespace SACG_APP.Pages
             est.DICOSE = Convert.ToInt64(Session["dicose"].ToString());
             est.Responsable = Convert.ToInt32(txtDocumento.Text);
             repo.Res(est);
+            Response.Redirect("home.aspx");
         }
 
         protected void btnPass_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace SACG_APP.Pages
             u.User = Session["user"].ToString();
             u.Pass = txtPass.Text;
             repo.Pas(u);
+            Response.Redirect("home.aspx");
         }
     }
 }

@@ -42,8 +42,8 @@
               <ul class="dropdown-menu" role="menu">
                 <li><asp:HyperLink ID="aARegistrar" runat="server" NavigateUrl="~/Pages/RegistrarAnimal.aspx">Registrar</asp:HyperLink></li>
                 <li class="divider"></li>
-                <li><asp:HyperLink ID="aAEvento" runat="server" NavigateUrl="~/Pages/#">Nuevo Evento</asp:HyperLink></li>
-                <li><asp:HyperLink ID="aATransferencia" runat="server" NavigateUrl="~/Pages/#">Nueva Transferencia</asp:HyperLink></li>
+                <li><asp:HyperLink ID="aAEvento" runat="server" NavigateUrl="~/Pages/TratamientoSanitario.aspx">Nuevo Evento</asp:HyperLink></li>
+                <li><asp:HyperLink ID="aATransferencia" runat="server" NavigateUrl="">Nueva Transferencia</asp:HyperLink></li>
               </ul>
             </li>
             <li><asp:HyperLink ID="aPersonas" runat="server" NavigateUrl="~/Pages/#contact">Personas</asp:HyperLink></li>
